@@ -1,2 +1,5 @@
 # Final Fantasy XIV Collectable Tracker
-A one stop shop for all collectable gathering.
+
+A gathering assistant designed to help you with every aspect of collectable gathering.
+
+#### Free and open source
