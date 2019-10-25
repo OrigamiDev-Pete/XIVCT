@@ -25,3 +25,7 @@ Never leave the action with Overlay Mode, keeping all the useful information rig
  * Easily select the number of items on screen
  * Change the opacity to suit your playstyle
  * Minimize button to hide the panel when you don't need it
+
+### Troubleshooting
+In case of an malfuction most issues can be resolved by navigating to the XIVCT folder and deleting the 'savestate.save' file. Doing this will reset all settings to their defaults.
+Please report any issues on Github to help squash any bugs that pop up.
