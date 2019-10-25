@@ -1,0 +1,8 @@
+{
+    "ItemKey": {
+        "basic": [theme, time, iconpath, name, rating, slot, location, closestcrystal, scrips, scriptype],
+        "adv": [rating1, rating2, rating 3, scrip1, scrips2, scrips3, exp1, exp2, exp3],
+        "fish": [life, bait, primelocation, conditions, am/pm],
+        "mooch": [name, iconpath, bait]
+    }
+}

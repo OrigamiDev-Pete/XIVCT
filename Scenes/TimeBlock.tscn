@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/TimeBlock.gd" type="Script" id=1]
+
+[node name="TimeBlock" type="ColorRect"]
+margin_top = 30.0
+margin_right = 80.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 0, 5 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+color = Color( 0.921569, 0.592157, 0.0784314, 1 )
+script = ExtResource( 1 )

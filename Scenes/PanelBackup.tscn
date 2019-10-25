@@ -1,0 +1,469 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://UI/Default_theme.tres" type="Theme" id=1]
+[ext_resource path="res://Scenes/Styles/Panel.stylebox" type="StyleBox" id=2]
+[ext_resource path="res://Scripts/Panel.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/PanelSeperator.gd" type="Script" id=4]
+[ext_resource path="res://Fonts/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://UI/Icons/Icon_Background.png" type="Texture" id=6]
+[ext_resource path="res://UI/Icons/Unknown_Icon.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/Styles/MiniPanel.stylebox" type="StyleBox" id=8]
+[ext_resource path="res://UI/Icons/crystal2.png" type="Texture" id=9]
+[ext_resource path="res://UI/Icons/Yellow_Scrip_Icon.png" type="Texture" id=10]
+[ext_resource path="res://Scripts/ScrollLabel.gd" type="Script" id=11]
+[ext_resource path="res://UI/Icons/Fishing/Mooch/80px-HQOverlay.png" type="Texture" id=12]
+
+[sub_resource type="DynamicFont" id=1]
+size = 28
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.6, 0.6, 0.6, 0.172549 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.6, 0.6, 0.6, 0.360784 )
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0, 0, 0, 0.34902 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 1, 1, 1, 0.184314 )
+
+[node name="Panel" type="Panel"]
+anchor_right = 1.0
+anchor_bottom = 0.057
+margin_right = -920.0
+margin_bottom = 0.439995
+rect_min_size = Vector2( 1920, 62 )
+theme = ExtResource( 1 )
+custom_styles/panel = ExtResource( 2 )
+script = ExtResource( 3 )
+
+[node name="PanelSeparator" type="HBoxContainer" parent="."]
+margin_right = 1920.0
+margin_bottom = 62.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="PanelSeparator"]
+margin_right = 10.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 10, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Timer" type="Label" parent="PanelSeparator"]
+margin_left = 14.0
+margin_right = 234.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 220, 62 )
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 1 )
+text = "12:00"
+align = 1
+valign = 1
+
+[node name="Control" type="Control" parent="PanelSeparator"]
+margin_left = 238.0
+margin_right = 318.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 80, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="IconBG" type="TextureRect" parent="PanelSeparator/Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -30.0
+margin_top = -31.0
+margin_right = 30.0
+margin_bottom = 31.0
+rect_min_size = Vector2( 60, 60 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource( 6 )
+expand = true
+
+[node name="Icon" type="TextureRect" parent="PanelSeparator/Control/IconBG"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 56.0
+margin_bottom = 56.0
+rect_min_size = Vector2( 56, 56 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource( 7 )
+expand = true
+
+[node name="ItemName" type="Label" parent="PanelSeparator"]
+margin_left = 322.0
+margin_right = 480.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 158, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = ExtResource( 8 )
+text = "ItemName"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="Rating" type="Label" parent="PanelSeparator"]
+margin_left = 484.0
+margin_right = 584.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 100, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Rating"
+align = 1
+valign = 1
+
+[node name="Slot" type="Label" parent="PanelSeparator"]
+margin_left = 588.0
+margin_right = 638.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 50, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = ExtResource( 8 )
+text = "Slot"
+align = 1
+valign = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelSeparator"]
+margin_left = 642.0
+margin_right = 792.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 150, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+alignment = 1
+
+[node name="Location" type="Label" parent="PanelSeparator/VBoxContainer2"]
+margin_right = 150.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 0, 23 )
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Location"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="ClosestCrystal" type="Label" parent="PanelSeparator/VBoxContainer2"]
+margin_top = 27.0
+margin_right = 150.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 150, 23 )
+size_flags_horizontal = 3
+size_flags_vertical = 2
+text = "ClosestCrystal"
+align = 1
+valign = 1
+autowrap = true
+max_lines_visible = 0
+
+[node name="TextureRect" type="TextureRect" parent="PanelSeparator/VBoxContainer2/ClosestCrystal"]
+margin_top = 1.0
+margin_right = 15.0
+margin_bottom = 24.0
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 5
+
+[node name="Scrips" type="Label" parent="PanelSeparator"]
+margin_left = 796.0
+margin_right = 876.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 80, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = ExtResource( 8 )
+text = "Scrips"
+align = 1
+valign = 1
+
+[node name="ScripType" type="TextureRect" parent="PanelSeparator"]
+margin_left = 880.0
+margin_right = 910.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 30, 62 )
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 6
+
+[node name="Button" type="Button" parent="."]
+margin_left = 10.0
+margin_right = 1920.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 0, 62 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Extras" type="Control" parent="."]
+editor/display_folded = true
+visible = false
+margin_left = 100.0
+margin_top = 70.0
+margin_right = 579.0
+margin_bottom = 164.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Panel" type="Panel" parent="Extras"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = 8.0
+margin_bottom = 31.0
+custom_styles/panel = SubResource( 5 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Extras"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 10.0
+
+[node name="Rating" type="VBoxContainer" parent="Extras/HBoxContainer"]
+margin_right = 157.0
+margin_bottom = 104.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Extras/HBoxContainer/Rating"]
+margin_right = 157.0
+margin_bottom = 23.0
+custom_styles/normal = SubResource( 6 )
+text = "Rating"
+align = 1
+
+[node name="Label2" type="Label" parent="Extras/HBoxContainer/Rating"]
+margin_top = 27.0
+margin_right = 157.0
+margin_bottom = 50.0
+align = 1
+
+[node name="Label3" type="Label" parent="Extras/HBoxContainer/Rating"]
+margin_top = 54.0
+margin_right = 157.0
+margin_bottom = 77.0
+text = "test"
+align = 1
+
+[node name="Label4" type="Label" parent="Extras/HBoxContainer/Rating"]
+margin_top = 81.0
+margin_right = 157.0
+margin_bottom = 104.0
+text = "test"
+align = 1
+
+[node name="Scrips" type="VBoxContainer" parent="Extras/HBoxContainer"]
+margin_left = 161.0
+margin_right = 318.0
+margin_bottom = 104.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Extras/HBoxContainer/Scrips"]
+margin_right = 157.0
+margin_bottom = 23.0
+custom_styles/normal = SubResource( 6 )
+text = "Scrips"
+align = 1
+
+[node name="Label2" type="Label" parent="Extras/HBoxContainer/Scrips"]
+margin_top = 27.0
+margin_right = 157.0
+margin_bottom = 50.0
+align = 1
+
+[node name="Label3" type="Label" parent="Extras/HBoxContainer/Scrips"]
+margin_top = 54.0
+margin_right = 157.0
+margin_bottom = 77.0
+align = 1
+
+[node name="Label4" type="Label" parent="Extras/HBoxContainer/Scrips"]
+margin_top = 81.0
+margin_right = 157.0
+margin_bottom = 104.0
+align = 1
+
+[node name="Exp" type="VBoxContainer" parent="Extras/HBoxContainer"]
+margin_left = 322.0
+margin_right = 479.0
+margin_bottom = 104.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Extras/HBoxContainer/Exp"]
+margin_right = 157.0
+margin_bottom = 23.0
+custom_styles/normal = SubResource( 6 )
+text = "Experience"
+align = 1
+
+[node name="Label2" type="Label" parent="Extras/HBoxContainer/Exp"]
+margin_top = 27.0
+margin_right = 157.0
+margin_bottom = 50.0
+align = 1
+
+[node name="Label3" type="Label" parent="Extras/HBoxContainer/Exp"]
+margin_top = 54.0
+margin_right = 157.0
+margin_bottom = 77.0
+align = 1
+
+[node name="Label4" type="Label" parent="Extras/HBoxContainer/Exp"]
+margin_top = 81.0
+margin_right = 157.0
+margin_bottom = 104.0
+align = 1
+
+[node name="ScripType" type="TextureRect" parent="Extras"]
+margin_left = -60.0
+margin_top = 30.0
+margin_right = -20.0
+margin_bottom = 92.0
+rect_min_size = Vector2( 40, 62 )
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 6
+
+[node name="Fish" type="Control" parent="."]
+editor/display_folded = true
+visible = false
+anchor_right = 1.0
+margin_left = 100.0
+margin_top = 180.0
+margin_right = -1130.0
+margin_bottom = 280.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Panel" type="Panel" parent="Fish"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 58.0
+margin_right = -211.0
+margin_bottom = -19.0
+custom_styles/panel = SubResource( 5 )
+
+[node name="Conditions" type="Label" parent="Fish/Panel"]
+margin_right = 40.0
+margin_bottom = 23.0
+text = "Conditions:"
+
+[node name="Label" type="Label" parent="Fish/Panel"]
+margin_left = 91.0
+margin_right = 416.0
+margin_bottom = 23.0
+text = "---"
+clip_text = true
+
+[node name="Panel2" type="Panel" parent="Fish"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -211.0
+margin_bottom = -77.0
+custom_styles/panel = SubResource( 5 )
+
+[node name="Bait" type="Label" parent="Fish/Panel2"]
+margin_right = 33.0
+margin_bottom = 23.0
+text = "Bait:"
+
+[node name="TextScrollBox" type="Control" parent="Fish/Panel2"]
+margin_left = 38.0
+margin_right = 479.0
+margin_bottom = 23.0
+rect_clip_content = true
+script = ExtResource( 11 )
+
+[node name="Label" type="Label" parent="Fish/Panel2/TextScrollBox"]
+margin_right = 882.0
+margin_bottom = 23.0
+text = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+
+[node name="Timer" type="Timer" parent="Fish/Panel2/TextScrollBox"]
+wait_time = 2.0
+
+[node name="Panel3" type="Panel" parent="Fish"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 29.0
+margin_right = -211.0
+margin_bottom = -48.0
+custom_styles/panel = SubResource( 5 )
+
+[node name="Location" type="Label" parent="Fish/Panel3"]
+margin_right = 33.0
+margin_bottom = 23.0
+text = "Prime Location:"
+
+[node name="Label" type="Label" parent="Fish/Panel3"]
+margin_left = 121.0
+margin_right = 212.0
+margin_bottom = 23.0
+text = "---"
+
+[node name="Mooch" type="Label" parent="Fish"]
+margin_left = 484.0
+margin_right = 691.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 207, 0 )
+custom_styles/normal = SubResource( 6 )
+text = "Mooch"
+align = 1
+
+[node name="Label" type="Label" parent="Fish/Mooch"]
+margin_top = 27.0
+margin_right = 207.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 207, 0 )
+text = "-"
+align = 1
+
+[node name="IconBG" type="TextureRect" parent="Fish/Mooch"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -22.5
+margin_top = 37.5
+margin_right = 21.5
+margin_bottom = 81.5
+rect_min_size = Vector2( 44, 44 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="Fish/Mooch/IconBG"]
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 43.0
+margin_bottom = 43.0
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 5
+
+[node name="HQOverlay" type="TextureRect" parent="Fish/Mooch/IconBG"]
+margin_right = 43.0
+margin_bottom = 43.0
+mouse_filter = 2
+texture = ExtResource( 12 )
+expand = true
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="visibility_changed" from="Fish/Panel2/TextScrollBox" to="Fish/Panel2/TextScrollBox" method="_on_TextScrollBox_visibility_changed"]
+[connection signal="timeout" from="Fish/Panel2/TextScrollBox/Timer" to="Fish/Panel2/TextScrollBox" method="_on_Timer_timeout"]

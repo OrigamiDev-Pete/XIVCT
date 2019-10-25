@@ -1,0 +1,503 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://UI/Default_theme.tres" type="Theme" id=1]
+[ext_resource path="res://Scenes/Styles/Panel.stylebox" type="StyleBox" id=2]
+[ext_resource path="res://Scripts/Panel.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/PanelSeperator.gd" type="Script" id=4]
+[ext_resource path="res://Fonts/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://UI/Icons/Icon_Background.png" type="Texture" id=6]
+[ext_resource path="res://UI/Icons/Unknown_Icon.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/Styles/MiniPanel.stylebox" type="StyleBox" id=8]
+[ext_resource path="res://UI/Icons/crystal2.png" type="Texture" id=9]
+[ext_resource path="res://UI/Icons/Yellow_Scrip_Icon.png" type="Texture" id=10]
+[ext_resource path="res://Scripts/Extras.gd" type="Script" id=11]
+[ext_resource path="res://Scripts/ScrollLabel.gd" type="Script" id=12]
+[ext_resource path="res://UI/Icons/Fishing/Mooch/80px-HQOverlay.png" type="Texture" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+size = 28
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.6, 0.6, 0.6, 0.172549 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.6, 0.6, 0.6, 0.360784 )
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0, 0, 0, 0.34902 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 1, 1, 1, 0.184314 )
+
+[node name="Panel" type="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -1018.0
+rect_min_size = Vector2( 0, 62 )
+theme = ExtResource( 1 )
+custom_styles/panel = ExtResource( 2 )
+script = ExtResource( 3 )
+
+[node name="PanelSeparator" type="HBoxContainer" parent="."]
+margin_right = 1920.0
+margin_bottom = 62.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="PanelSeparator"]
+margin_right = 10.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 10, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Timer" type="Label" parent="PanelSeparator"]
+margin_left = 14.0
+margin_right = 234.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 220, 62 )
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 1 )
+text = "12:00"
+align = 1
+valign = 1
+
+[node name="Control" type="Control" parent="PanelSeparator"]
+margin_left = 238.0
+margin_right = 318.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 80, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="IconBG" type="TextureRect" parent="PanelSeparator/Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -30.0
+margin_top = -31.0
+margin_right = 30.0
+margin_bottom = 31.0
+rect_min_size = Vector2( 60, 60 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource( 6 )
+expand = true
+
+[node name="Icon" type="TextureRect" parent="PanelSeparator/Control/IconBG"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 56.0
+margin_bottom = 56.0
+rect_min_size = Vector2( 56, 56 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource( 7 )
+expand = true
+
+[node name="ItemName" type="Label" parent="PanelSeparator"]
+margin_left = 322.0
+margin_right = 480.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 158, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = ExtResource( 8 )
+text = "ItemName"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="Rating" type="Label" parent="PanelSeparator"]
+margin_left = 484.0
+margin_right = 584.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 100, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Rating"
+align = 1
+valign = 1
+
+[node name="Slot" type="Label" parent="PanelSeparator"]
+margin_left = 588.0
+margin_right = 638.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 50, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = ExtResource( 8 )
+text = "Slot"
+align = 1
+valign = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelSeparator"]
+margin_left = 642.0
+margin_right = 792.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 150, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+alignment = 1
+
+[node name="Location" type="Label" parent="PanelSeparator/VBoxContainer2"]
+margin_right = 150.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 0, 23 )
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Location"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="ClosestCrystal" type="Label" parent="PanelSeparator/VBoxContainer2"]
+margin_top = 27.0
+margin_right = 150.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 150, 23 )
+size_flags_horizontal = 3
+size_flags_vertical = 2
+text = "ClosestCrystal"
+align = 1
+valign = 1
+autowrap = true
+max_lines_visible = 0
+
+[node name="TextureRect" type="TextureRect" parent="PanelSeparator/VBoxContainer2/ClosestCrystal"]
+margin_top = 1.0
+margin_right = 15.0
+margin_bottom = 24.0
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 5
+
+[node name="Scrips" type="Label" parent="PanelSeparator"]
+margin_left = 796.0
+margin_right = 876.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 80, 62 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = ExtResource( 8 )
+text = "Scrips"
+align = 1
+valign = 1
+
+[node name="ScripType" type="TextureRect" parent="PanelSeparator"]
+margin_left = 880.0
+margin_right = 910.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 30, 62 )
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 6
+
+[node name="Button" type="Button" parent="."]
+margin_left = 10.0
+margin_right = 1920.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 0, 62 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+
+[node name="Extras" type="GridContainer" parent="."]
+anchor_right = 1.0
+margin_top = 62.0
+margin_bottom = 200.0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+columns = 2
+script = ExtResource( 11 )
+
+[node name="Extras" type="Control" parent="Extras"]
+editor/display_folded = true
+visible = false
+margin_right = 1916.0
+margin_bottom = 125.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_min_size = Vector2( 0, 125 )
+size_flags_horizontal = 3
+
+[node name="Panel" type="Panel" parent="Extras/Extras"]
+margin_left = 160.0
+margin_top = 72.0
+margin_right = 639.0
+margin_bottom = 95.0
+custom_styles/panel = SubResource( 5 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Extras/Extras"]
+editor/display_folded = true
+margin_left = 160.0
+margin_top = 18.0
+margin_right = 639.0
+margin_bottom = 122.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Rating" type="VBoxContainer" parent="Extras/Extras/HBoxContainer"]
+margin_right = 157.0
+margin_bottom = 104.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Extras/Extras/HBoxContainer/Rating"]
+margin_right = 157.0
+margin_bottom = 23.0
+custom_styles/normal = SubResource( 6 )
+text = "Rating"
+align = 1
+
+[node name="Label2" type="Label" parent="Extras/Extras/HBoxContainer/Rating"]
+margin_top = 27.0
+margin_right = 157.0
+margin_bottom = 50.0
+align = 1
+
+[node name="Label3" type="Label" parent="Extras/Extras/HBoxContainer/Rating"]
+margin_top = 54.0
+margin_right = 157.0
+margin_bottom = 77.0
+text = "test"
+align = 1
+
+[node name="Label4" type="Label" parent="Extras/Extras/HBoxContainer/Rating"]
+margin_top = 81.0
+margin_right = 157.0
+margin_bottom = 104.0
+text = "test"
+align = 1
+
+[node name="Scrips" type="VBoxContainer" parent="Extras/Extras/HBoxContainer"]
+editor/display_folded = true
+margin_left = 161.0
+margin_right = 318.0
+margin_bottom = 104.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Extras/Extras/HBoxContainer/Scrips"]
+margin_right = 157.0
+margin_bottom = 23.0
+custom_styles/normal = SubResource( 6 )
+text = "Scrips"
+align = 1
+
+[node name="Label2" type="Label" parent="Extras/Extras/HBoxContainer/Scrips"]
+margin_top = 27.0
+margin_right = 157.0
+margin_bottom = 50.0
+align = 1
+
+[node name="Label3" type="Label" parent="Extras/Extras/HBoxContainer/Scrips"]
+margin_top = 54.0
+margin_right = 157.0
+margin_bottom = 77.0
+align = 1
+
+[node name="Label4" type="Label" parent="Extras/Extras/HBoxContainer/Scrips"]
+margin_top = 81.0
+margin_right = 157.0
+margin_bottom = 104.0
+align = 1
+
+[node name="Exp" type="VBoxContainer" parent="Extras/Extras/HBoxContainer"]
+editor/display_folded = true
+margin_left = 322.0
+margin_right = 479.0
+margin_bottom = 104.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Extras/Extras/HBoxContainer/Exp"]
+margin_right = 157.0
+margin_bottom = 23.0
+custom_styles/normal = SubResource( 6 )
+text = "Experience"
+align = 1
+
+[node name="Label2" type="Label" parent="Extras/Extras/HBoxContainer/Exp"]
+margin_top = 27.0
+margin_right = 157.0
+margin_bottom = 50.0
+align = 1
+
+[node name="Label3" type="Label" parent="Extras/Extras/HBoxContainer/Exp"]
+margin_top = 54.0
+margin_right = 157.0
+margin_bottom = 77.0
+align = 1
+
+[node name="Label4" type="Label" parent="Extras/Extras/HBoxContainer/Exp"]
+margin_top = 81.0
+margin_right = 157.0
+margin_bottom = 104.0
+align = 1
+
+[node name="ScripType" type="TextureRect" parent="Extras/Extras"]
+margin_left = 100.0
+margin_top = 45.0
+margin_right = 140.0
+margin_bottom = 107.0
+rect_min_size = Vector2( 40, 62 )
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 6
+
+[node name="Fish" type="Control" parent="Extras"]
+editor/display_folded = true
+visible = false
+size_flags_horizontal = 2
+size_flags_vertical = 0
+
+[node name="Fish" type="Control" parent="Extras/Fish"]
+margin_left = -32.0
+margin_right = 920.0
+margin_bottom = 125.0
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Extras/Fish/Fish"]
+margin_left = 152.0
+margin_top = 18.0
+margin_right = 662.0
+margin_bottom = 95.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Panel2" type="Panel" parent="Extras/Fish/Fish/HBoxContainer"]
+margin_right = 510.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 0, 23 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="Bait" type="Label" parent="Extras/Fish/Fish/HBoxContainer/Panel2"]
+margin_right = 33.0
+margin_bottom = 23.0
+text = "Bait:"
+
+[node name="TextScrollBox" type="Control" parent="Extras/Fish/Fish/HBoxContainer/Panel2"]
+margin_left = 38.0
+margin_right = 479.0
+margin_bottom = 23.0
+rect_clip_content = true
+script = ExtResource( 12 )
+
+[node name="Label" type="Label" parent="Extras/Fish/Fish/HBoxContainer/Panel2/TextScrollBox"]
+margin_right = 882.0
+margin_bottom = 23.0
+text = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+
+[node name="Timer" type="Timer" parent="Extras/Fish/Fish/HBoxContainer/Panel2/TextScrollBox"]
+wait_time = 2.0
+
+[node name="Panel3" type="Panel" parent="Extras/Fish/Fish/HBoxContainer"]
+editor/display_folded = true
+margin_top = 27.0
+margin_right = 510.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 23 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="Location" type="Label" parent="Extras/Fish/Fish/HBoxContainer/Panel3"]
+margin_right = 118.0
+margin_bottom = 23.0
+text = "Prime Location:"
+
+[node name="Label" type="Label" parent="Extras/Fish/Fish/HBoxContainer/Panel3"]
+margin_left = 121.0
+margin_right = 510.0
+margin_bottom = 23.0
+text = "---"
+
+[node name="Panel" type="Panel" parent="Extras/Fish/Fish/HBoxContainer"]
+editor/display_folded = true
+margin_top = 54.0
+margin_right = 510.0
+margin_bottom = 77.0
+rect_min_size = Vector2( 0, 23 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 5 )
+
+[node name="Conditions" type="Label" parent="Extras/Fish/Fish/HBoxContainer/Panel"]
+margin_right = 86.0
+margin_bottom = 23.0
+text = "Conditions:"
+
+[node name="Label" type="Label" parent="Extras/Fish/Fish/HBoxContainer/Panel"]
+margin_left = 91.0
+margin_right = 500.0
+margin_bottom = 23.0
+text = "---"
+clip_text = true
+
+[node name="Mooch" type="Control" parent="Extras/Fish"]
+margin_left = 680.0
+margin_top = 18.0
+margin_right = 890.0
+margin_bottom = 128.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Mooch" type="Label" parent="Extras/Fish/Mooch"]
+margin_right = 207.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 207, 0 )
+custom_styles/normal = SubResource( 6 )
+text = "Mooch"
+align = 1
+
+[node name="Label" type="Label" parent="Extras/Fish/Mooch/Mooch"]
+margin_top = 27.0
+margin_right = 207.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 207, 0 )
+text = "-"
+align = 1
+
+[node name="IconBG" type="TextureRect" parent="Extras/Fish/Mooch/Mooch"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -22.5
+margin_top = 37.5
+margin_right = 21.5
+margin_bottom = 81.5
+rect_min_size = Vector2( 44, 44 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="Extras/Fish/Mooch/Mooch/IconBG"]
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 43.0
+margin_bottom = 43.0
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 5
+
+[node name="HQOverlay" type="TextureRect" parent="Extras/Fish/Mooch/Mooch/IconBG"]
+margin_right = 43.0
+margin_bottom = 43.0
+mouse_filter = 2
+texture = ExtResource( 13 )
+expand = true
+
+[node name="Tween" type="Tween" parent="Extras"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="visibility_changed" from="Extras/Fish/Fish/HBoxContainer/Panel2/TextScrollBox" to="Extras/Fish/Fish/HBoxContainer/Panel2/TextScrollBox" method="_on_TextScrollBox_visibility_changed"]
+[connection signal="timeout" from="Extras/Fish/Fish/HBoxContainer/Panel2/TextScrollBox/Timer" to="Extras/Fish/Fish/HBoxContainer/Panel2/TextScrollBox" method="_on_Timer_timeout"]

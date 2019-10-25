@@ -1,0 +1,334 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://UI/Default_theme.tres" type="Theme" id=1]
+[ext_resource path="res://Scripts/Main.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Tableheader.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI/emptybox.tres" type="StyleBox" id=4]
+[ext_resource path="res://Scripts/LineEdit.gd" type="Script" id=5]
+[ext_resource path="res://Scenes/Box_Grow.anim" type="Animation" id=6]
+[ext_resource path="res://Scenes/Box_Shrink.anim" type="Animation" id=7]
+[ext_resource path="res://Scenes/TimeMap.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scripts/Checkboxes.gd" type="Script" id=9]
+[ext_resource path="res://UI/Icons/Miner_Icon_Blue.png" type="Texture" id=10]
+[ext_resource path="res://UI/Icons/Botanist_Icon_Blue.png" type="Texture" id=11]
+[ext_resource path="res://Scripts/PanelContainer.gd" type="Script" id=12]
+[ext_resource path="res://Scripts/Time.gd" type="Script" id=13]
+[ext_resource path="res://Scenes/Blur.material" type="Material" id=14]
+[ext_resource path="res://Scripts/BlurShader.gd" type="Script" id=15]
+[ext_resource path="res://UI/Icons/Cog_Icon_Normal.png" type="Texture" id=16]
+[ext_resource path="res://UI/Icons/Cog_Icon_Pressed.png" type="Texture" id=17]
+[ext_resource path="res://UI/Icons/Cog_Icon_Hover.png" type="Texture" id=18]
+[ext_resource path="res://Scenes/ItemSelect.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Scenes/Settings.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Sound/Drum.ogg" type="AudioStream" id=21]
+[ext_resource path="res://Scripts/AudioStreamPlayer.gd" type="Script" id=22]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TableHeaderBackground" type="ColorRect" parent="."]
+margin_top = 180.0
+margin_right = 1920.0
+margin_bottom = 206.0
+rect_min_size = Vector2( 1920, 0 )
+color = Color( 0.301961, 0.301961, 0.301961, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TableHeader" parent="." instance=ExtResource( 3 )]
+margin_top = 181.0
+margin_bottom = 204.0
+
+[node name="Container" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_clip_content = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VSeparator" type="VSeparator" parent="Container/VBoxContainer"]
+margin_right = 1920.0
+margin_bottom = 29.56
+rect_min_size = Vector2( 0, 29.56 )
+custom_styles/separator = ExtResource( 4 )
+custom_constants/separation = 31
+
+[node name="Header" type="Panel" parent="Container/VBoxContainer"]
+margin_top = 33.0
+margin_right = 1920.0
+margin_bottom = 133.0
+rect_min_size = Vector2( 0, 100 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Container/VBoxContainer/Header"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 50.0
+margin_right = -10.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/VBoxContainer/Header/HBoxContainer2"]
+margin_right = 581.0
+margin_bottom = 100.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer"]
+margin_top = 30.0
+margin_right = 581.0
+margin_bottom = 70.0
+
+[node name="Button" type="Button" parent="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer"]
+margin_right = 200.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 40 )
+hint_tooltip = "Add or remove items from the clock list"
+focus_mode = 1
+enabled_focus_mode = 1
+text = "Add/Remove Items"
+
+[node name="VSeparator" type="VSeparator" parent="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer"]
+margin_left = 204.0
+margin_right = 274.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 70, 0 )
+custom_styles/separator = ExtResource( 4 )
+
+[node name="LineEdit" type="LineEdit" parent="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer"]
+editor/display_folded = true
+margin_left = 278.0
+margin_right = 507.133
+margin_bottom = 40.0
+rect_min_size = Vector2( 229.133, 10 )
+clear_button_enabled = true
+placeholder_text = "Search..."
+placeholder_alpha = 0.2
+script = ExtResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit"]
+anims/Box_Grow = ExtResource( 6 )
+anims/Box_Shrink = ExtResource( 7 )
+
+[node name="VSeparator2" type="VSeparator" parent="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer"]
+margin_left = 511.0
+margin_right = 581.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 70, 0 )
+custom_styles/separator = ExtResource( 4 )
+
+[node name="TimeMap" parent="Container/VBoxContainer" groups=[
+"load",
+] instance=ExtResource( 8 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 137.0
+margin_right = 1920.0
+margin_bottom = 177.0
+
+[node name="Checkboxes" type="HBoxContainer" parent="Container"]
+anchor_right = 1.0
+margin_left = 520.0
+margin_top = 63.0
+margin_right = -90.0
+margin_bottom = 103.0
+rect_min_size = Vector2( 300, 40 )
+size_flags_horizontal = 0
+size_flags_vertical = 4
+alignment = 2
+script = ExtResource( 9 )
+
+[node name="Mining" type="CheckBox" parent="Container/Checkboxes"]
+margin_left = 1061.0
+margin_right = 1140.0
+margin_bottom = 40.0
+focus_mode = 1
+custom_styles/focus = SubResource( 1 )
+enabled_focus_mode = 1
+text = "Mining"
+
+[node name="Icon" type="TextureRect" parent="Container/Checkboxes/Mining"]
+margin_left = 34.0
+margin_top = -13.0
+margin_right = 54.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 20, 20 )
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 6
+
+[node name="Botany" type="CheckBox" parent="Container/Checkboxes"]
+margin_left = 1144.0
+margin_right = 1225.0
+margin_bottom = 40.0
+focus_mode = 1
+custom_styles/focus = SubResource( 2 )
+enabled_focus_mode = 1
+text = "Botany"
+
+[node name="Icon" type="TextureRect" parent="Container/Checkboxes/Botany"]
+margin_left = 34.0
+margin_top = -13.0
+margin_right = 54.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 20, 20 )
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 6
+
+[node name="Fishing" type="CheckBox" parent="Container/Checkboxes"]
+margin_left = 1229.0
+margin_right = 1310.0
+margin_bottom = 40.0
+focus_mode = 1
+custom_styles/focus = SubResource( 3 )
+enabled_focus_mode = 1
+text = "Fishing"
+
+[node name="Icon" type="TextureRect" parent="Container/Checkboxes/Fishing"]
+margin_left = 37.0
+margin_top = -13.0
+margin_right = 57.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 20, 20 )
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 6
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 215.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panels" type="VBoxContainer" parent="Container/ScrollContainer" groups=[
+"load",
+"save",
+]]
+custom_constants/separation = 7
+script = ExtResource( 12 )
+
+[node name="Time" type="Control" parent="."]
+editor/display_folded = true
+anchor_right = 1.0
+margin_right = 5.0
+margin_bottom = 40.0
+script = ExtResource( 13 )
+
+[node name="LocalTime" type="Label" parent="Time"]
+anchor_left = 0.394
+anchor_right = 0.394
+margin_left = -78.4501
+margin_right = 76.5499
+margin_bottom = 23.0
+text = "Local Time - 12:00:00"
+
+[node name="EorzeaTime" type="Label" parent="Time"]
+anchor_left = 0.527
+anchor_right = 0.608
+margin_left = 70.525
+margin_right = 81.6
+margin_bottom = 23.0
+text = "Eorzea Time - 12:00:00"
+
+[node name="Blur" type="ColorRect" parent="."]
+editor/display_folded = true
+material = ExtResource( 14 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 1
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tween" type="Tween" parent="Blur"]
+
+[node name="SettingsButton" type="TextureButton" parent="."]
+margin_right = 30.0
+margin_bottom = 30.0
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 17 )
+texture_hover = ExtResource( 18 )
+expand = true
+
+[node name="ItemSelect" parent="." instance=ExtResource( 19 )]
+editor/display_folded = true
+visible = false
+anchor_left = 0.219
+anchor_top = 0.315
+anchor_right = 0.219
+anchor_bottom = 0.315
+margin_left = -65.48
+margin_top = -0.200043
+margin_right = 1144.52
+margin_bottom = 399.8
+
+[node name="Settings" parent="." groups=[
+"load",
+"save",
+] instance=ExtResource( 20 )]
+editor/display_folded = true
+visible = false
+margin_top = -217.5
+margin_bottom = 217.5
+
+[node name="MenuButton" parent="Settings/Panel" index="3"]
+items = [ "Drum", null, 0, false, false, -1, 0, null, "", false, "Piano 1", null, 0, false, false, -1, 0, null, "", false, "Piano 2", null, 0, false, false, -1, 0, null, "", false, "Guitar", null, 0, false, false, -1, 0, null, "", false, "Triangle", null, 0, false, false, -1, 0, null, "", false, "Beep", null, 0, false, false, -1, 0, null, "", false ]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 21 )
+volume_db = -4.0
+script = ExtResource( 22 )
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+[connection signal="pressed" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/Button" to="Blur" method="_on_Button_pressed"]
+[connection signal="focus_entered" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" to="Container/Checkboxes" method="_on_LineEdit_focus_entered"]
+[connection signal="focus_entered" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" to="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" method="_on_LineEdit_focus_entered"]
+[connection signal="focus_exited" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" to="Container/Checkboxes" method="_on_LineEdit_focus_exited"]
+[connection signal="focus_exited" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" to="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" method="_on_LineEdit_focus_exited"]
+[connection signal="mouse_exited" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" to="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" method="_on_LineEdit_mouse_exited"]
+[connection signal="text_changed" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" to="Container/ScrollContainer/Panels" method="_on_LineEdit_text_changed"]
+[connection signal="pressed" from="Container/Checkboxes/Mining" to="Container/Checkboxes" method="_on_Mining_pressed"]
+[connection signal="pressed" from="Container/Checkboxes/Botany" to="Container/Checkboxes" method="_on_Botany_pressed"]
+[connection signal="pressed" from="Container/Checkboxes/Fishing" to="Container/Checkboxes" method="_on_Fishing_pressed"]
+[connection signal="gatherable" from="Container/ScrollContainer/Panels" to="AudioStreamPlayer" method="_on_Panels_gatherable"]
+[connection signal="focus_entered" from="Blur" to="Blur" method="_on_Blur_focus_entered"]
+[connection signal="focus_entered" from="Blur" to="ItemSelect" method="_on_Blur_focus_entered"]
+[connection signal="focus_entered" from="Blur" to="Settings" method="_on_Blur_focus_entered"]
+[connection signal="pressed" from="SettingsButton" to="Blur" method="_on_Settings_pressed"]
+[connection signal="pressed" from="SettingsButton" to="Settings" method="_on_SettingsButton_pressed"]
+[connection signal="item_changed" from="ItemSelect" to="Container/VBoxContainer/TimeMap" method="_on_ItemSelect_item_changed"]
+[connection signal="item_changed" from="ItemSelect" to="Container/ScrollContainer/Panels" method="_on_ItemSelect_item_changed"]
+[connection signal="value_changed" from="Settings/Panel/HSlider" to="AudioStreamPlayer" method="_on_HSlider_value_changed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]
+
+[editable path="Settings"]

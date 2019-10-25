@@ -1,0 +1,117 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://UI/Premult_Alpha.material" type="Material" id=1]
+[ext_resource path="res://Fonts/Open_Sans/OpenSans-Light.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Scripts/PanelOverlay.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/Styles/PanelOverlay.stylebox" type="StyleBox" id=4]
+[ext_resource path="res://UI/Icons/Yellow_Scrip_Icon.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 14
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
+
+[node name="PanelOverlay" type="Control"]
+material = ExtResource( 1 )
+margin_right = 540.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 0, 25 )
+mouse_filter = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme = SubResource( 2 )
+script = ExtResource( 3 )
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+material = ExtResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 540, 25 )
+mouse_filter = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_styles/fg = ExtResource( 4 )
+value = 78.52
+percent_visible = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ProgressBar"]
+margin_right = 499.0
+margin_bottom = 25.0
+mouse_filter = 2
+custom_constants/separation = 20
+
+[node name="ColorRect" type="ColorRect" parent="ProgressBar/HBoxContainer"]
+material = ExtResource( 1 )
+margin_right = 10.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="Time" type="Label" parent="ProgressBar/HBoxContainer"]
+margin_left = 30.0
+margin_top = 2.0
+margin_right = 65.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 35, 0 )
+text = "12:00"
+align = 1
+
+[node name="Name" type="Label" parent="ProgressBar/HBoxContainer"]
+margin_left = 85.0
+margin_top = 2.0
+margin_right = 186.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 101, 0 )
+text = "Heavens Lemon"
+clip_text = true
+
+[node name="Rating" type="Label" parent="ProgressBar/HBoxContainer"]
+margin_left = 206.0
+margin_top = 2.0
+margin_right = 244.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 38, 0 )
+text = "Rating"
+align = 1
+
+[node name="Slot" type="Label" parent="ProgressBar/HBoxContainer"]
+margin_left = 264.0
+margin_top = 2.0
+margin_right = 288.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 24, 0 )
+text = "Slot"
+align = 1
+
+[node name="Location" type="Label" parent="ProgressBar/HBoxContainer"]
+margin_left = 308.0
+margin_top = 2.0
+margin_right = 388.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 80, 0 )
+rect_clip_content = true
+size_flags_horizontal = 0
+text = "Location"
+clip_text = true
+
+[node name="Scrips" type="Label" parent="ProgressBar/HBoxContainer"]
+margin_left = 408.0
+margin_top = 2.0
+margin_right = 446.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 38, 0 )
+text = "Scrips"
+align = 1
+
+[node name="ScripType" type="TextureRect" parent="ProgressBar/HBoxContainer"]
+material = ExtResource( 1 )
+margin_left = 466.0
+margin_right = 486.66
+margin_bottom = 25.0
+rect_min_size = Vector2( 20.66, 25 )
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 6

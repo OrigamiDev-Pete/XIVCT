@@ -1,0 +1,556 @@
+[gd_scene load_steps=37 format=2]
+
+[ext_resource path="res://UI/Default_theme.tres" type="Theme" id=1]
+[ext_resource path="res://Scripts/Main.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Tableheader.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI/emptybox.tres" type="StyleBox" id=4]
+[ext_resource path="res://Scripts/LineEdit.gd" type="Script" id=5]
+[ext_resource path="res://Scenes/TimeMap.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scripts/Checkboxes.gd" type="Script" id=7]
+[ext_resource path="res://UI/Icons/Miner_Icon_Blue.png" type="Texture" id=8]
+[ext_resource path="res://UI/Icons/Botanist_Icon_Blue.png" type="Texture" id=9]
+[ext_resource path="res://UI/Icons/Yellow_Scrip_Icon.png" type="Texture" id=10]
+[ext_resource path="res://UI/Icons/White_Scrip_Icon.png" type="Texture" id=11]
+[ext_resource path="res://Scripts/PanelContainer.gd" type="Script" id=12]
+[ext_resource path="res://Scripts/Time.gd" type="Script" id=13]
+[ext_resource path="res://UI/Icons/Cog_Icon_Normal.png" type="Texture" id=14]
+[ext_resource path="res://UI/Icons/Cog_Icon_Pressed.png" type="Texture" id=15]
+[ext_resource path="res://UI/Icons/Cog_Icon_Hover.png" type="Texture" id=16]
+[ext_resource path="res://UI/Icons/Overlay_Icon_Normal.png" type="Texture" id=17]
+[ext_resource path="res://UI/Icons/Overlay_Icon_Pressed.png" type="Texture" id=18]
+[ext_resource path="res://UI/Icons/Overlay_Icon_Hover.png" type="Texture" id=19]
+[ext_resource path="res://Scenes/Blur.material" type="Material" id=20]
+[ext_resource path="res://Scripts/BlurShader.gd" type="Script" id=21]
+[ext_resource path="res://Scenes/ItemSelect.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Scenes/Settings.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Sound/Drum.ogg" type="AudioStream" id=24]
+[ext_resource path="res://Scripts/AudioStreamPlayer.gd" type="Script" id=25]
+[ext_resource path="res://Scenes/OverlayMode.tscn" type="PackedScene" id=26]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 4
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="InputEventAction" id=6]
+action = "ui_cancel"
+
+[sub_resource type="ShortCut" id=7]
+shortcut = SubResource( 6 )
+
+[sub_resource type="InputEventAction" id=8]
+action = "ui_overlay"
+
+[sub_resource type="ShortCut" id=9]
+shortcut = SubResource( 8 )
+
+[sub_resource type="Animation" id=10]
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:custom_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.968627, 0.803922, 0.0588235, 1 ), Color( 0.968627, 0.803922, 0.0588235, 0.509804 ), Color( 0.968627, 0.803922, 0.0588235, 1 ) ]
+}
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Background" type="ColorRect" parent="." groups=[
+"Main",
+]]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TableHeaderBackground" type="ColorRect" parent="." groups=[
+"Main",
+]]
+margin_top = 180.0
+margin_right = 1920.0
+margin_bottom = 206.0
+rect_min_size = Vector2( 1920, 0 )
+color = Color( 0.301961, 0.301961, 0.301961, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TableHeader" parent="." groups=[
+"Main",
+] instance=ExtResource( 3 )]
+margin_top = 181.0
+margin_bottom = 204.0
+
+[node name="Container" type="Control" parent="." groups=[
+"Main",
+]]
+editor/display_folded = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_clip_content = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VSeparator" type="VSeparator" parent="Container/VBoxContainer"]
+margin_right = 1920.0
+margin_bottom = 29.56
+rect_min_size = Vector2( 0, 29.56 )
+custom_styles/separator = ExtResource( 4 )
+custom_constants/separation = 31
+
+[node name="Header" type="Panel" parent="Container/VBoxContainer"]
+margin_top = 33.0
+margin_right = 1920.0
+margin_bottom = 133.0
+rect_min_size = Vector2( 0, 100 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Container/VBoxContainer/Header"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 50.0
+margin_right = -10.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/VBoxContainer/Header/HBoxContainer2"]
+margin_right = 581.0
+margin_bottom = 100.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer"]
+margin_top = 30.0
+margin_right = 581.0
+margin_bottom = 70.0
+
+[node name="Button" type="Button" parent="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer"]
+margin_right = 200.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 40 )
+hint_tooltip = "Add or remove items from the clock list"
+focus_mode = 1
+enabled_focus_mode = 1
+text = "Add/Remove Items"
+
+[node name="VSeparator" type="VSeparator" parent="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer"]
+margin_left = 204.0
+margin_right = 274.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 70, 0 )
+custom_styles/separator = ExtResource( 4 )
+
+[node name="LineEdit" type="LineEdit" parent="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer"]
+margin_left = 278.0
+margin_right = 507.133
+margin_bottom = 40.0
+rect_min_size = Vector2( 229.133, 10 )
+clear_button_enabled = true
+placeholder_text = "Search..."
+placeholder_alpha = 0.2
+script = ExtResource( 5 )
+
+[node name="VSeparator2" type="VSeparator" parent="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer"]
+margin_left = 511.0
+margin_right = 581.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 70, 0 )
+custom_styles/separator = ExtResource( 4 )
+
+[node name="TimeMap" parent="Container/VBoxContainer" groups=[
+"load",
+] instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 137.0
+margin_right = 1920.0
+margin_bottom = 177.0
+
+[node name="CheckBoxes" type="Control" parent="Container"]
+editor/display_folded = true
+anchor_left = 0.001
+anchor_right = 1.0
+margin_left = 897.08
+margin_top = 48.0
+margin_bottom = 129.0
+size_flags_horizontal = 0
+size_flags_vertical = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Checkboxes" type="VBoxContainer" parent="Container/CheckBoxes"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -375.0
+margin_top = -40.5
+margin_bottom = 40.5
+rect_min_size = Vector2( 375, 81 )
+size_flags_horizontal = 0
+size_flags_vertical = 4
+script = ExtResource( 7 )
+
+[node name="GatherType" type="HBoxContainer" parent="Container/CheckBoxes/Checkboxes"]
+margin_right = 300.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 300, 40 )
+size_flags_horizontal = 0
+size_flags_vertical = 4
+alignment = 2
+
+[node name="Mining" type="CheckBox" parent="Container/CheckBoxes/Checkboxes/GatherType"]
+margin_left = 51.0
+margin_right = 130.0
+margin_bottom = 40.0
+focus_mode = 1
+custom_styles/focus = SubResource( 2 )
+enabled_focus_mode = 1
+text = "Mining"
+
+[node name="Icon" type="TextureRect" parent="Container/CheckBoxes/Checkboxes/GatherType/Mining"]
+margin_left = 34.0
+margin_top = -13.0
+margin_right = 54.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 20, 20 )
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="Botany" type="CheckBox" parent="Container/CheckBoxes/Checkboxes/GatherType"]
+margin_left = 134.0
+margin_right = 215.0
+margin_bottom = 40.0
+focus_mode = 1
+custom_styles/focus = SubResource( 3 )
+enabled_focus_mode = 1
+text = "Botany"
+
+[node name="Icon" type="TextureRect" parent="Container/CheckBoxes/Checkboxes/GatherType/Botany"]
+margin_left = 34.0
+margin_top = -13.0
+margin_right = 54.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 20, 20 )
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 6
+
+[node name="Fishing" type="CheckBox" parent="Container/CheckBoxes/Checkboxes/GatherType"]
+margin_left = 219.0
+margin_right = 300.0
+margin_bottom = 40.0
+focus_mode = 1
+custom_styles/focus = SubResource( 4 )
+enabled_focus_mode = 1
+text = "Fishing"
+
+[node name="Icon" type="TextureRect" parent="Container/CheckBoxes/Checkboxes/GatherType/Fishing"]
+margin_left = 37.0
+margin_top = -13.0
+margin_right = 57.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 20, 20 )
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="ScripType" type="HBoxContainer" parent="Container/CheckBoxes/Checkboxes"]
+margin_top = 44.0
+margin_right = 375.0
+margin_bottom = 75.0
+custom_constants/separation = 34
+
+[node name="VSeparator" type="VSeparator" parent="Container/CheckBoxes/Checkboxes/ScripType"]
+margin_right = 44.66
+margin_bottom = 31.0
+rect_min_size = Vector2( 44.66, 0 )
+custom_styles/separator = SubResource( 5 )
+
+[node name="Yellow" type="CheckBox" parent="Container/CheckBoxes/Checkboxes/ScripType"]
+margin_left = 78.0
+margin_right = 154.0
+margin_bottom = 31.0
+focus_mode = 1
+enabled_focus_mode = 1
+text = "Yellow"
+
+[node name="Icon" type="TextureRect" parent="Container/CheckBoxes/Checkboxes/ScripType/Yellow"]
+margin_left = 81.0
+margin_top = 4.0
+margin_right = 101.0
+margin_bottom = 24.0
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 5
+
+[node name="White" type="CheckBox" parent="Container/CheckBoxes/Checkboxes/ScripType"]
+margin_left = 188.0
+margin_right = 260.0
+margin_bottom = 31.0
+focus_mode = 1
+enabled_focus_mode = 1
+text = "White"
+
+[node name="Icon" type="TextureRect" parent="Container/CheckBoxes/Checkboxes/ScripType/White"]
+margin_left = 77.0
+margin_top = 4.0
+margin_right = 97.0
+margin_bottom = 24.0
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 5
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 215.0
+
+[node name="Panels" type="VBoxContainer" parent="Container/ScrollContainer" groups=[
+"load",
+"save",
+]]
+margin_right = 1920.0
+size_flags_horizontal = 3
+custom_constants/separation = 7
+script = ExtResource( 12 )
+
+[node name="Time" type="Control" parent="." groups=[
+"Main",
+]]
+editor/display_folded = true
+anchor_right = 1.0
+margin_right = 5.0
+margin_bottom = 40.0
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LocalTime" type="Label" parent="Time"]
+anchor_left = 0.394
+anchor_right = 0.394
+margin_left = -78.4501
+margin_right = 76.5499
+margin_bottom = 23.0
+text = "Local Time - 12:00:00"
+
+[node name="EorzeaTime" type="Label" parent="Time"]
+anchor_left = 0.527
+anchor_right = 0.608
+margin_left = 70.525
+margin_right = 81.6
+margin_bottom = 23.0
+text = "Eorzea Time - 12:00:00"
+
+[node name="SettingsButton" type="TextureButton" parent="." groups=[
+"Main",
+]]
+margin_left = 2.0
+margin_top = 1.0
+margin_right = 32.0
+margin_bottom = 31.0
+hint_tooltip = "Settings"
+shortcut_in_tooltip = false
+shortcut = SubResource( 7 )
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 15 )
+texture_hover = ExtResource( 16 )
+expand = true
+
+[node name="OverlayButton" type="TextureButton" parent="." groups=[
+"Main",
+]]
+margin_left = 44.0
+margin_top = 4.0
+margin_right = 69.0
+margin_bottom = 29.0
+hint_tooltip = "Overlay Mode (F1)"
+shortcut_in_tooltip = false
+shortcut = SubResource( 9 )
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 18 )
+texture_hover = ExtResource( 19 )
+texture_disabled = ExtResource( 19 )
+stretch_mode = 5
+
+[node name="UpdateLabel" type="Label" parent="." groups=[
+"Main",
+]]
+editor/display_folded = true
+margin_left = 85.0
+margin_top = 5.0
+margin_right = 300.0
+margin_bottom = 28.0
+custom_colors/font_color = Color( 0.968627, 0.803922, 0.0588235, 0.509804 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UpdateLabel"]
+autoplay = "Pulse"
+anims/Pulse = SubResource( 10 )
+
+[node name="Blur" type="ColorRect" parent="."]
+editor/display_folded = true
+material = ExtResource( 20 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 1
+script = ExtResource( 21 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tween" type="Tween" parent="Blur"]
+
+[node name="ItemSelect" parent="." instance=ExtResource( 22 )]
+editor/display_folded = true
+visible = false
+anchor_left = 0.219
+anchor_top = 0.315
+anchor_right = 0.219
+anchor_bottom = 0.315
+margin_left = -65.48
+margin_top = -0.200043
+margin_right = 1144.52
+margin_bottom = 399.8
+
+[node name="Settings" parent="." groups=[
+"load",
+"save",
+] instance=ExtResource( 23 )]
+editor/display_folded = true
+visible = false
+margin_top = -217.5
+margin_bottom = 217.5
+
+[node name="General" parent="Settings/Tabs" index="0"]
+visible = true
+margin_top = 33.0
+
+[node name="MenuButton" parent="Settings/Tabs/General" index="4"]
+items = [ "Drum", null, 0, false, false, -1, 0, null, "", false, "Piano 1", null, 0, false, false, -1, 0, null, "", false, "Piano 2", null, 0, false, false, -1, 0, null, "", false, "Guitar", null, 0, false, false, -1, 0, null, "", false, "Triangle", null, 0, false, false, -1, 0, null, "", false, "Beep", null, 0, false, false, -1, 0, null, "", false ]
+
+[node name="OptionButton" parent="Settings/Tabs/General/SoundMinimized" index="1"]
+items = [ "Dim", null, false, 0, null, "Mute", null, false, 1, null, "Always on", null, false, 2, null ]
+
+[node name="Overlay" parent="Settings/Tabs" index="1"]
+visible = false
+
+[node name="OptionButton" parent="Settings/Tabs/Overlay/CloseButton" index="1"]
+items = [ "Adaptive", null, false, 0, null, "Left", null, false, 1, null, "Right", null, false, 2, null ]
+
+[node name="OptionButton" parent="Settings/Tabs/Overlay/HiddenSound" index="1"]
+items = [ "Mute", null, false, 0, null, "Dim", null, false, 1, null, "Always On", null, false, 2, null ]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." groups=[
+"load",
+]]
+stream = ExtResource( 24 )
+volume_db = -4.0
+script = ExtResource( 25 )
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+use_threads = true
+
+[node name="OverlayMode" parent="." groups=[
+"load",
+"save",
+"Overlay",
+] instance=ExtResource( 26 )]
+visible = false
+anchor_bottom = 0.5
+margin_left = -300.0
+margin_top = -136.08
+margin_right = 300.0
+margin_bottom = 136.08
+rect_min_size = Vector2( 600, 162 )
+
+[node name="VSeparator" parent="OverlayMode/Header" index="0"]
+margin_bottom = 23.0
+
+[node name="Time" parent="OverlayMode/Header" index="1"]
+margin_right = 63.0
+margin_bottom = 23.0
+
+[node name="Name" parent="OverlayMode/Header" index="2"]
+margin_left = 76.0
+margin_right = 177.0
+margin_bottom = 23.0
+
+[node name="Rating" parent="OverlayMode/Header" index="3"]
+margin_left = 190.0
+margin_right = 240.28
+margin_bottom = 23.0
+
+[node name="Slot" parent="OverlayMode/Header" index="4"]
+margin_left = 253.0
+margin_right = 282.0
+margin_bottom = 23.0
+
+[node name="Location" parent="OverlayMode/Header" index="5"]
+margin_left = 295.0
+margin_right = 360.0
+margin_bottom = 23.0
+
+[node name="Scrips" parent="OverlayMode/Header" index="6"]
+margin_left = 373.0
+margin_right = 419.0
+margin_bottom = 23.0
+[connection signal="ready" from="." to="OverlayMode" method="_on_Main_ready"]
+[connection signal="pressed" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/Button" to="Blur" method="_on_Button_pressed"]
+[connection signal="focus_entered" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" to="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" method="_on_LineEdit_focus_entered"]
+[connection signal="mouse_exited" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" to="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" method="_on_LineEdit_mouse_exited"]
+[connection signal="text_changed" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" to="Container/ScrollContainer/Panels" method="_on_LineEdit_text_changed"]
+[connection signal="pressed" from="Container/CheckBoxes/Checkboxes/GatherType/Mining" to="Container/CheckBoxes/Checkboxes" method="_on_Mining_pressed"]
+[connection signal="pressed" from="Container/CheckBoxes/Checkboxes/GatherType/Botany" to="Container/CheckBoxes/Checkboxes" method="_on_Botany_pressed"]
+[connection signal="pressed" from="Container/CheckBoxes/Checkboxes/GatherType/Fishing" to="Container/CheckBoxes/Checkboxes" method="_on_Fishing_pressed"]
+[connection signal="pressed" from="Container/CheckBoxes/Checkboxes/ScripType/Yellow" to="Container/CheckBoxes/Checkboxes" method="_on_Yellow_pressed"]
+[connection signal="pressed" from="Container/CheckBoxes/Checkboxes/ScripType/White" to="Container/CheckBoxes/Checkboxes" method="_on_White_pressed"]
+[connection signal="gatherable" from="Container/ScrollContainer/Panels" to="AudioStreamPlayer" method="_on_Panels_gatherable"]
+[connection signal="pressed" from="SettingsButton" to="Settings" method="_on_SettingsButton_pressed"]
+[connection signal="pressed" from="SettingsButton" to="Blur" method="_on_Settings_pressed"]
+[connection signal="pressed" from="OverlayButton" to="." method="_on_Overlay_pressed"]
+[connection signal="focus_entered" from="Blur" to="Settings" method="_on_Blur_focus_entered"]
+[connection signal="focus_entered" from="Blur" to="Blur" method="_on_Blur_focus_entered"]
+[connection signal="focus_entered" from="Blur" to="ItemSelect" method="_on_Blur_focus_entered"]
+[connection signal="item_changed" from="ItemSelect" to="Container/ScrollContainer/Panels" method="_on_ItemSelect_item_changed"]
+[connection signal="item_changed" from="ItemSelect" to="Container/VBoxContainer/TimeMap" method="_on_ItemSelect_item_changed"]
+[connection signal="request_completed" from="Settings/ItemUpdate" to="." method="_on_ItemUpdate_request_completed"]
+[connection signal="value_changed" from="Settings/Tabs/General/HSlider" to="AudioStreamPlayer" method="_on_HSlider_value_changed"]
+[connection signal="item_selected" from="Settings/Tabs/General/SoundMinimized/OptionButton" to="AudioStreamPlayer" method="_on_OptionButton_item_selected"]
+[connection signal="value_changed" from="Settings/Tabs/General/Offset/OptionButton" to="Settings" method="_on_TimeOffset_value_changed"]
+[connection signal="value_changed" from="Settings/Tabs/Overlay/Opacity/SpinBox" to="OverlayMode" method="_on_Opacity_value_changed"]
+[connection signal="value_changed" from="Settings/Tabs/Overlay/Visible/SpinBox" to="OverlayMode" method="_on_Visible_value_changed"]
+[connection signal="item_selected" from="Settings/Tabs/Overlay/CloseButton/OptionButton" to="OverlayMode" method="_on_OptionButton_item_selected"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]
+[connection signal="pressed" from="OverlayMode/CloseButton" to="." method="_on_CloseButton_pressed"]
+
+[editable path="Settings"]
+
+[editable path="OverlayMode"]
