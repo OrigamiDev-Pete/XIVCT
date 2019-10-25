@@ -32,5 +32,5 @@ Never leave the action with Overlay Mode, keeping all the useful information rig
 3. Launch the .exe/.x86_64/.app file
 
 ## Troubleshooting
-In case of an malfuction most issues can be resolved by navigating to the XIVCT folder and deleting the 'savestate.save' file. Doing this will reset all settings to their defaults.
+In case of a malfuction most issues can be resolved by navigating to the XIVCT folder and deleting the 'savestate.save' file. Doing this will reset all settings to their defaults.
 Please report any issues on Github to help squash any bugs that pop up.
