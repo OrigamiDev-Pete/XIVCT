@@ -12,8 +12,8 @@ XIVCT is completely free and open for anyone to modify and customize!
 * All info in one place
 * __Overlay Mode!__
 * Handy visual Time map
-* Easy item search
-* Quick Hide/Show panel
+* Lightning fast search
+* Robust Hide/Show options
 * Customizable
 * Works competely offline
 * Stay up to date with auto version checking
