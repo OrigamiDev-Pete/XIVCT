@@ -478,7 +478,7 @@
           "adv": ["470-499", "500-529", "530+", "30", "34", "39", "1,732,000", "1,991,799", "2,251,600"]
     },
     "Porcini": {
-          "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Porcini_Icon.png", "Porcini", "240", "7", "The Churning Mists", "Zenith", "12", "yellow", 76],
+          "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Porcini_Icon.png", "Porcini", "240", "7", "The Churning Mists", "Zenith", "12", "yellow", 51],
           "adv": ["240-339", "340-369", "370+", "12", "13", "14", "84,672", "97,372", "110,073"]
     },
     "Pyrite": {
