@@ -3,6 +3,7 @@ extends Node
 var saved_array : Array
 var settings : Array
 var overlay : Array
+var itembox : Array
 
 func save():
 	var save_state = File.new()
@@ -20,6 +21,7 @@ func load():
 	
 	save_state.open("res://savestate.save", File.READ)
 	saved_array = (parse_json(save_state.get_line()))
+	itembox = (parse_json(save_state.get_line()))
 	settings = (parse_json(save_state.get_line()))
 	overlay = (parse_json(save_state.get_line()))
 	var load_nodes = get_tree().get_nodes_in_group("load")

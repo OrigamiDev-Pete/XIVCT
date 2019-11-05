@@ -108,6 +108,3 @@ func load():
 			continue
 		add_line(SaveLoad.saved_array[i])
 		line_array.append(SaveLoad.saved_array[i])
-		print("map")
-		print(i)
-		print(SaveLoad.saved_array[i])

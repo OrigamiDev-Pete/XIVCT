@@ -1,6 +1,7 @@
 extends Panel
 # warning-ignore-all:integer_division
 signal gatherable
+signal complete
 
 onready var itemdic : Dictionary = DictionaryLoader.item_dictionary
 
@@ -23,6 +24,9 @@ var time_offset = 3600 / offset_factor # Converts timers into local time
 var audio_played : bool = false
 var sort_ready : bool = true
 var active : bool = false
+var completed : bool = false
+var hidden_by : String
+
 onready var item_time : int = itemdic[item]["basic"][1]
 onready var item_time2 : int = item_time + 12
 onready var life : int = 2
@@ -53,6 +57,7 @@ func _ready():
 		get_extras(item)
 # warning-ignore:return_value_discarded
 		connect("gatherable", get_parent(), "_on_gatherable", [self])
+		connect("complete", get_parent(), "_on_complete")
 
 
 
@@ -79,14 +84,14 @@ func scrip_colour():
 	else:
 		pass
 
-func _on_searched():
-	hide()
+func _on_searched(hider):
+	_hide(hider)
 
-func _on_found(search_text):
+func _on_found(search_text, hider):
 	regex.compile("(?i)" + search_text)
 	var result = regex.search(item)
 	if result:
-		show()
+		_show(hider)
 
 func compare_time(item_time : int, life : int): # Compares 12 hour time
 	if not is_in_group("Fishing"):
@@ -122,6 +127,7 @@ func compare_time(item_time : int, life : int): # Compares 12 hour time
 				active = true
 			if end_time < 3:
 				raise()
+				emit_signal("complete")
 				if $PanelSeparator/ItemName.get("custom_styles/normal") != ResLoader.minipanelstyle:
 					set("custom_styles/panel", ResLoader.panelstyle)
 					$PanelSeparator/ItemName.set("custom_styles/normal", ResLoader.minipanelstyle)
@@ -148,6 +154,7 @@ func compare_time(item_time : int, life : int): # Compares 12 hour time
 				get_parent().refresh_sort()
 				sort_ready = false
 				audio_played = false
+
 			return active_time2
 	
 	else:
@@ -179,6 +186,7 @@ func compare_time(item_time : int, life : int): # Compares 12 hour time
 				active = true
 			if end_time < 3:
 				raise()
+				emit_signal("complete")
 				if $PanelSeparator/ItemName.get("custom_styles/normal") != ResLoader.minipanelstyle:
 					set("custom_styles/panel", ResLoader.panelstyle)
 					$PanelSeparator/ItemName.set("custom_styles/normal", ResLoader.minipanelstyle)
@@ -433,3 +441,15 @@ func group(item):
 		add_to_group("White", true)
 	if itemdic[item]["basic"][9] == "yellow":
 		add_to_group("Yellow", true)
+
+func _hide(hider):
+	if hidden_by.empty():
+		hidden_by = hider
+	hide()
+
+func _show(hider):
+	if hider == hidden_by:
+		show()
+		hidden_by.erase(0, 20)
+	else:
+		return

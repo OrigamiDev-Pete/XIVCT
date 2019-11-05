@@ -1,7 +1,13 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/ItemSelect.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/Open_Sans/OpenSans-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://UI/Icons/Miner_Icon_Yellow.png" type="Texture" id=3]
+[ext_resource path="res://UI/Icons/Botanist_Icon_Yellow.png" type="Texture" id=4]
+[ext_resource path="res://UI/Icons/Fisher_Icon_Yellow.png" type="Texture" id=5]
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.32549, 0.32549, 0.32549, 1 )
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.32549, 0.32549, 0.32549, 1 )
@@ -11,12 +17,18 @@ size = 12
 font_data = ExtResource( 2 )
 
 [node name="ItemSelect" type="Control"]
-anchor_right = 0.631
+anchor_right = 0.63
 anchor_bottom = 0.37
-margin_right = -1.52002
+margin_right = 0.399902
 margin_bottom = 0.399994
 mouse_filter = 2
 script = ExtResource( 1 )
+
+[node name="Panel2" type="Panel" parent="."]
+margin_left = 42.0
+margin_top = -50.0
+margin_right = 110.0
+custom_styles/panel = SubResource( 3 )
 
 [node name="Panel" type="Panel" parent="."]
 anchor_right = 1.0
@@ -41,5 +53,82 @@ margin_bottom = 35.0
 custom_fonts/font = SubResource( 2 )
 placeholder_text = "Search..."
 
+[node name="SpinBoxM" type="SpinBox" parent="Panel"]
+anchor_left = 0.14
+anchor_right = 0.14
+margin_left = 255.6
+margin_top = 10.0
+margin_right = 329.6
+margin_bottom = 34.0
+rect_scale = Vector2( 0.8, 0.8 )
+min_value = 1.0
+max_value = 80.0
+value = 80.0
+prefix = "Lv."
+
+[node name="SpinBoxB" type="SpinBox" parent="Panel"]
+anchor_left = 0.14
+anchor_right = 0.14
+margin_left = 342.6
+margin_top = 10.0
+margin_right = 416.6
+margin_bottom = 34.0
+rect_scale = Vector2( 0.8, 0.8 )
+min_value = 1.0
+max_value = 80.0
+value = 80.0
+prefix = "Lv."
+
+[node name="SpinBoxF" type="SpinBox" parent="Panel"]
+anchor_left = 0.14
+anchor_right = 0.14
+margin_left = 427.6
+margin_top = 10.0
+margin_right = 501.6
+margin_bottom = 34.0
+rect_scale = Vector2( 0.8, 0.8 )
+min_value = 1.0
+max_value = 80.0
+value = 80.0
+prefix = "Lv."
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+anchor_left = 0.14
+anchor_right = 0.14
+margin_left = 237.6
+margin_top = 10.0
+margin_right = 257.6
+margin_bottom = 30.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="TextureRect2" type="TextureRect" parent="Panel"]
+anchor_left = 0.14
+anchor_right = 0.14
+margin_left = 321.6
+margin_top = 10.0
+margin_right = 341.6
+margin_bottom = 30.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="TextureRect3" type="TextureRect" parent="Panel"]
+anchor_left = 0.14
+anchor_right = 0.14
+margin_left = 407.6
+margin_top = 10.0
+margin_right = 427.6
+margin_bottom = 30.0
+texture = ExtResource( 5 )
+expand = true
+
+[node name="Clear" type="Button" parent="Panel"]
+margin_left = 50.0
+margin_top = -40.0
+margin_right = 80.0
+margin_bottom = -10.0
+text = "Clear"
+
 [node name="Tween" type="Tween" parent="."]
 [connection signal="text_changed" from="Panel/LineEdit" to="." method="_on_LineEdit_text_changed"]
+[connection signal="pressed" from="Panel/Clear" to="." method="_on_Clear_pressed"]

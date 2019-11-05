@@ -124,5 +124,10 @@ texture_pressed = ExtResource( 7 )
 texture_hover = ExtResource( 8 )
 expand = true
 script = ExtResource( 9 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
 [connection signal="gui_input" from="ColorRect" to="." method="_on_ColorRect_gui_input"]
 [connection signal="pressed" from="Minimize" to="." method="_on_Minimize_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

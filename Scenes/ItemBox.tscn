@@ -4,7 +4,9 @@
 [ext_resource path="res://Scripts/ItemBox.gd" type="Script" id=2]
 [ext_resource path="res://UI/Icons/Unknown_Icon.png" type="Texture" id=3]
 
-[node name="Item" type="CheckBox"]
+[node name="Item" type="CheckBox" groups=[
+"box",
+]]
 margin_right = 300.0
 margin_bottom = 54.0
 rect_min_size = Vector2( 300, 54 )

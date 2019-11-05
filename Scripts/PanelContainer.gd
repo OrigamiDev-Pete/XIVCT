@@ -3,6 +3,7 @@ extends VBoxContainer
 signal searched
 signal found
 signal gatherable
+signal complete
 
 var panel = preload("res://Scenes/Panel.tscn")
 
@@ -18,8 +19,8 @@ func add_panels(item):
 	add_child(new_panel, true)
 	new_panel.name = item
 	sort(new_panel)
-	connect("searched", new_panel, "_on_searched")
-	connect("found", new_panel, "_on_found")
+	connect("searched", new_panel, "_on_searched", ["search"])
+	connect("found", new_panel, "_on_found", ["search"])
 	
 	#Overlay Setup
 #	get_node("/root/Main/OverlayMode").add_panels(item)
@@ -92,14 +93,15 @@ func load():
 	item_array = SaveLoad.saved_array
 	for i in item_array.size():
 		add_panels(item_array[i])
-		print("Panel")
-		print(i)
-		print(item_array[i])
 
 func _on_gatherable(node):
 	emit_signal("gatherable")
 #	move_child(node, 0)
-	
-func _input(event):
-	if Input.is_action_just_pressed("ui_accept"):
-		refresh_sort()
+
+func _on_complete():
+	emit_signal("complete")
+
+#func _input(event):
+#	if Input.is_action_just_pressed("ui_accept"):
+#		refresh_sort()
+

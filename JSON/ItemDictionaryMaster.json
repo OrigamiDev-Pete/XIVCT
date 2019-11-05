@@ -1,536 +1,776 @@
 {
     "Aapoak": {
-        "basic": ["fishingtheme", 12, "res://UI/Icons/Fishing/Aapoak_Icon.png", "Aapoak", "690", "-", "The Tempest", "-", "1,383", "white"],
+        "basic": ["fishingtheme", 12, "res://UI/Icons/Fishing/Aapoak_Icon.png", "Aapoak", "690", "-", "The Tempest", "The Macarenses Angle", "1,383", "white", 80],
         "adv": ["690-737", "738-751", "752+", "1,383", "1,521", "1,659", "2,165,000", "2,381,500", "2,598,000"],
         "fish": [4, "-", "West Caliban Gap (X:6, Y:14)", "Clear, Fish Eyes, Norvrandt Folklore Book", "pm"],
-        "mooch": ["Ancient Shrimp", "res://UI/Icons/Fishing/Mooch/Ancient_Shrimp_Icon.png", "Short Bill, Minnow, Squid Strip", "-"]
+        "mooch": ["Ancient Shrimp", "res://UI/Icons/Fishing/Mooch/Ancient_Shrimp_Icon.png", "Short Bill Minnow, Squid Strip"]
     },
     "Abalathian Mistletoe": {
-        "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Abalathian_Mistletoe_Icon.png", "Abalathian Mistletoe", "450", "3", "The Sea of Clouds", "Camp Cloudtop", "22", "yellow"],
+        "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Abalathian_Mistletoe_Icon.png", "Abalathian Mistletoe", "450", "3", "The Sea of Clouds", "Camp Cloudtop", "22", "yellow", 58],
         "adv": ["450-469", "470-499", "500+", "22", "24", "26", "274,176", "315,302", "356,428"]
     },
     "Abalathian Rock Salt": {
-        "basic": ["miningtheme", 10, "res://UI/Icons/Mining/Abalathian_Rock_Salt_Icon.png", "Abalathian Rock Salt", "450", "1", "The Sea of Clouds", "Ok' Zundu", "20", "yellow"],
+        "basic": ["miningtheme", 10, "res://UI/Icons/Mining/Abalathian_Rock_Salt_Icon.png", "Abalathian Rock Salt", "450", "1", "The Sea of Clouds", "Ok' Zundu", "20", "yellow", 56],
         "adv": ["450-469", "470-499", "500+", "20", "22", "24", "207,360", "238,463", "269,568"]
     },
     "Adamantite Ore": {
-        "basic": ["miningtheme", 12, "res://UI/Icons/Mining/Adamantite_Ore_Icon.png", "Adamantite Ore", "450", "6", "Asyz Lla", "Helix", "23", "yellow"],
+        "basic": ["miningtheme", 12, "res://UI/Icons/Mining/Adamantite_Ore_Icon.png", "Adamantite Ore", "450", "6", "Asyz Lla", "Helix", "23", "yellow", 60],
         "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Ala Mhigan Ribbon": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Ala_Mhigan_Ribbon_Icon.png", "Ala Mihgan Ribbon", "41", "-", "The Peaks", "Ala Ghiri", "40", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Ala_Mhigan_Ribbon_Icon.png", "Ala Mihgan Ribbon", "41", "-", "The Peaks", "Ala Ghiri", "40", "yellow", 70],
         "adv": ["41-44", "45", "46+", "12", "13", "14", "746,940", "821,634", "896,328"],
         "fish": [0, "Stonefly Larva, Suspending Minnow", "The Arms of the Meed (X:9.3 Y:37.5)", "Any"],
         "mooch": ["-", "-", "-"]
     },
+    "Albino Caiman": {
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Albino_Caiman_Icon.png", "Albino Caiman", "760", "-", "Lakeland", "Fort Jobb", "34", "yellow", 71],
+        "adv": ["760-812", "813-827", "828+", "34", "37", "40", "347,025", "381,727", "416,430"],
+        "fish": [0, "Fruit Worm, Marble Nymph, Robber Ball", "The Rift of Sighs (X:31 Y:12)", "Any"],
+        "mooch": ["-", "-", "-"]
+    },
+    "Amber Cloves": {
+        "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Amber_Cloves_Icon.png", "Amber Cloves", "450", "3", "Amh Araeng", "Twine", "14", "yellow", 76],
+        "adv": ["450-469", "470-499", "500+", "14", "15", "16", "506,800", "582,820", "658,840"]
+    },
     "Amber Salamander": {
-        "basic": ["fishingtheme", 6, "res://UI/Icons/Fishing/Amber_Salamander_Icon.png", "Amber Salamander", "869", "-", "The Dravanian Forelands", "Tailfeather", "33", "yellow"],
+        "basic": ["fishingtheme", 6, "res://UI/Icons/Fishing/Amber_Salamander_Icon.png", "Amber Salamander", "869", "-", "The Dravanian Forelands", "Tailfeather", "33", "yellow", 60],
         "adv": ["869-900", "901-908", "909+", "33", "36", "39", "268,200", "295,020", "321,840"],
         "fish": [5, "Brute Leech, Stonefly Nymph", "The Iron Feast (X:31 Y:5)", "Dravanian Folklore Book", "am"],
         "mooch": ["-", "-", "-"]
     },
     "Astral Moraine": {
-        "basic": ["miningtheme", 12, "res://UI/Icons/Mining/Astral_Moraine_Icon.png", "Astral Moraine", "450", "4", "Coerthas Western Highlands", "Falcon's Nest", "23", "yellow"],
+        "basic": ["miningtheme", 12, "res://UI/Icons/Mining/Astral_Moraine_Icon.png", "Astral Moraine", "450", "4", "Coerthas Western Highlands", "Falcon's Nest", "23", "yellow", 60],
         "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Aurum Regis Ore": {
-        "basic": ["miningtheme", 2, "res://UI/Icons/Mining/Aurum_Regis_Ore_Icon.png", "Aurum Regis Ore", "450", "6", "The Churning Mists", "Zenith", "23", "yellow"],
+        "basic": ["miningtheme", 2, "res://UI/Icons/Mining/Aurum_Regis_Ore_Icon.png", "Aurum Regis Ore", "450", "6", "The Churning Mists", "Zenith", "23", "yellow", 60],
         "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Bamboo Shoot": {
-          "basic": ["botanytheme", 10, "res://UI/Icons/Botany/Bamboo_Shoot_Icon.png", "Bamboo Shoot", "450", "8", "Yanxia", "Namai", "35", "yellow"],
+          "basic": ["botanytheme", 10, "res://UI/Icons/Botany/Bamboo_Shoot_Icon.png", "Bamboo Shoot", "450", "8", "Yanxia", "Namai", "35", "yellow", 63],
           "adv": ["450-469", "470-499", "500+", "13", "14", "16", "464,720", "534,428", "604,136"]
     },
     "Barreleye": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Barreleye_Icon.png", "Barreleye", "864", "-", "Asyz Lla", "Helix", "200", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Barreleye_Icon.png", "Barreleye", "864", "-", "Asyz Lla", "Helix", "200", "yellow", 60],
         "adv": ["864-923", "924-939", "940+", "200", "220", "240", "268,200", "295,020", "321,840"],
         "fish": [0, "-", "The Flagship (X:21 Y:21)", "Thunder, Abalathia's Spine Folklore Book"],
         "mooch": ["Platinum Fish", "res://UI/Icons/Fishing/Mooch/Platinum_Fish_Icon.png", "Fiend Worm"]
     },
     "Beech Branch": {
-          "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Beech_Branch_Icon.png", "Beech Branch", "450", "3", "The Fringes", "Castrum Oriens", "12", "yellow"],
+          "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Beech_Branch_Icon.png", "Beech Branch", "450", "3", "The Fringes", "Castrum Oriens", "12", "yellow", 60],
           "adv": ["450-469", "470-499", "500+", "12", "13", "15", "357,600", "411,239", "464,880"]
     },
+    "Beech Log": {
+          "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Beech_Log_Icon.png", "Beech Log", "450", "6", "The Fringes", "Castrum Oriens", "8", "yellow", 61],
+          "adv": ["450-469", "470-499", "500+", "8", "8", "10", "97,460", "112,078", "126,698"]
+    },
     "Blue Mountain Bubble": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Blue_Mountain_Bubble_Icon.png", "Blue Mountain Bubble", "373", "-", "Il Mheg", "-", "18", "white"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Blue_Mountain_Bubble_Icon.png", "Blue Mountain Bubble", "373", "-", "Il Mheg", "Wolekdorf", "18", "white", 80],
         "adv": ["373-422", "423-430", "431+", "18", "36", "68", "866,000", "1,082,500", "1,299,000"],
         "fish": [0, "Normal Gig Head", "Central Longmirror Lake (X:25 Y:25)", "Truth of the Oceans, Sauldia Ruby"],
         "mooch": ["-", "-", "-"]
     },
     "Blue Quartz": {
-        "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Blue_Quartz_Icon.png", "Blue Quartz", "450", "7", "The Dravanian Hinterlands", "Idyllshire", "23", "yellow"],
+        "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Blue_Quartz_Icon.png", "Blue Quartz", "450", "7", "The Dravanian Hinterlands", "Idyllshire", "23", "yellow", 60],
         "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
+    "Bothriolepis": {
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Bothriolepis_Icon.png", "Bothriolepis", "865", "-", "Lakeland", "The Ostall Imperative", "20", "yellow", 75],
+        "adv": ["865-978", "979-996", "997+", "20", "40", "76", "446,600", "558,250", "669,900"],
+        "fish": [0, "Large Gig Head", "Southeast Source (X:14 Y:39)", "Truth of the Oceans, Noblefish"],
+        "mooch": ["-", "-", "-"]
+    },
     "Broad Beans": {
-          "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Broad_Beans_Icon.png", "Broad Beans", "450", "2", "Il Mheg", "Phisor Lran", "35", "yellow"],
+          "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Broad_Beans_Icon.png", "Broad Beans", "450", "2", "Il Mheg", "Phisor Lran", "35", "yellow", 72],
           "adv": ["450-469", "470-499", "500+", "35", "38", "45", "622,240", "715,576", "808,912"]
     },
     "Bubble Eye": {
-        "basic": ["fishingtheme", 10, "res://UI/Icons/Fishing/Bubble_Eye_Icon.png", "Bubble Eye", "161", "-", "The Sea of Clouds", "Camp Cloudtop", "10", "yellow"],
+        "basic": ["fishingtheme", 10, "res://UI/Icons/Fishing/Bubble_Eye_Icon.png", "Bubble Eye", "161", "-", "The Sea of Clouds", "Camp Cloudtop", "10", "yellow", 54],
         "adv": ["161-172", "173-175", "176+", "10", "11", "12", "93,600", "102,960", "112,320"],
         "fish": [7, "Purse Web Spider, Stonefly Nymph", "Voor Sian Siran (X:25 Y:25)", "Any", "am"],
         "mooch": ["Hedgemole Cricket", "res://UI/Icons/Fishing/Mooch/Hedgemole_Cricket_Icon.png", "Stonefly Nymph, Purse Web Spider, Brute Leech"]
     },
     "Butterfly Fish": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Butterfly_Fish_Icon.png", "Butterfly Fish", "115", "-", "The Ruby Sea", "Crick", "10", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Butterfly_Fish_Icon.png", "Butterfly Fish", "115", "-", "The Ruby Sea", "Onokoro", "10", "yellow", 63],
         "adv": ["115-123", "124-126", "127+", "10", "11", "12", "290,450", "319,495", "348,540"],
         "fish": [0, "Live Shrimp, Bream Lure, Blue Bobbit", "Shoal Rock (X:32.5 Y:8.3)", "Any", "am"],
         "mooch": ["-", "-", "-"]
     },
     "Capelin": {
-        "basic": ["fishingtheme", 12, "res://UI/Icons/Fishing/Capelin_Icon.png", "Capelin", "81", "-", "Coerthas Western Highlands", "Falcon's Nest", "33", "yellow"],
+        "basic": ["fishingtheme", 12, "res://UI/Icons/Fishing/Capelin_Icon.png", "Capelin", "81", "-", "Coerthas Western Highlands", "Falcon's Nest", "33", "yellow", 60],
         "adv": ["81-89", "90-91", "92+", "33", "36", "39", "268,200", "295,020", "321,840"],
         "fish": [6, "Brute Leech, Purse Web Spiders", "Clearpool (X:36 Y:6)", "Coerthan Folklore Book", "am"],
         "mooch": ["-", "-", "-"]
     },
+    "Cedar Log": {
+          "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Cedar_Log_Icon.png", "Cedar Log", "240", "6", "Coerthas Western Highlands", "Falcon's Nest", "5", "yellow", 50],
+          "adv": ["240-339", "340-369", "370+", "5", "5", "6", "17,280", "19,872", "22,464"]
+    },
+    "Chickweed": {
+          "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Chickweed_Icon.png", "Chickweed", "450", "8", "The Azim Steppe", "Dhoro Iloh", "9", "yellow", 68],
+          "adv": ["450-469", "470-499", "500+", "9", "9", "11", "191,860", "220,638", "249,418"]
+    },
     "Cherubfish": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Cherubfish_Icon.png", "Cherubfish", "267", "-", "Yanxia", "Namai", "10", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Cherubfish_Icon.png", "Cherubfish", "267", "-", "Yanxia", "Namai", "10", "yellow", 69],
         "adv": ["267-302", "303-308", "309+", "10", "19", "36", "216,520", "270,650", "324,780"],
         "fish": [0, "Normal Gig Head", "The Sunken Junk (X:10 Y:34)", "Truth of the Oceans", "am"],
         "mooch": ["-", "-", "-"]
     },
     "Chalcocite": {
-        "basic": ["miningtheme", 8, "res://UI/Icons/Mining/Chalcocite_Icon.png", "Chalcocite", "320", "2", "The Dravanian Forelands", "Anyx Trine", "13", "yellow"],
+        "basic": ["miningtheme", 8, "res://UI/Icons/Mining/Chalcocite_Icon.png", "Chalcocite", "320", "2", "The Dravanian Forelands", "Anyx Trine", "13", "yellow", 53],
         "adv": ["320-449", "450-499", "500+", "13", "14", "15", "124,416", "143,078", "161,740"]
     },
     "Chives": {
-          "basic": ["botanytheme", 10, "res://UI/Icons/Botany/Chives_Icon.png", "Chives", "400", "1", "Coerthas Western Highlands", "Falcon's Nest", "14", "yellow"],
+          "basic": ["botanytheme", 10, "res://UI/Icons/Botany/Chives_Icon.png", "Chives", "400", "1", "Coerthas Western Highlands", "Falcon's Nest", "14", "yellow", 55],
           "adv": ["400-449", "450-499", "500+", "14", "15", "16", "177,408", "204,019", "230,630"]
     },
     "Chysahl Greens": {
-          "basic": ["botanytheme", 8, "res://UI/Icons/Botany/Chysahl_Greens_Icon.png", "Chysahl Greens", "450", "6", "Coerthas Western Highlands", "Tailfeather", "23", "yellow"],
+          "basic": ["botanytheme", 8, "res://UI/Icons/Botany/Chysahl_Greens_Icon.png", "Chysahl Greens", "450", "6", "Coerthas Western Highlands", "Tailfeather", "23", "yellow", 60],
           "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Chromite Ore": {
-        "basic": ["miningtheme", 10, "res://UI/Icons/Mining/Chromite_Ore_Icon.png", "Chromite Ore", "470", "6", "The Peaks", "Ala Ghiri", "23", "yellow"],
+        "basic": ["miningtheme", 10, "res://UI/Icons/Mining/Chromite_Ore_Icon.png", "Chromite Ore", "470", "6", "The Peaks", "Ala Ghiri", "23", "yellow", 70],
         "adv": ["470-499", "500-529", "530+", "23", "26", "29", "995,920", "1,145,308", "1,294,696"]
     },
     "Cloud Banana": {
-          "basic": ["botanytheme", 4, "res://UI/Icons/Botany/Cloud_Banana_Icon.png", "Cloud Banana", "450", "2", "The Dravanian Hinterlands", "Idyllshire", "20", "yellow"],
+          "basic": ["botanytheme", 4, "res://UI/Icons/Botany/Cloud_Banana_Icon.png", "Cloud Banana", "450", "2", "The Dravanian Hinterlands", "Idyllshire", "20", "yellow", 57],
           "adv": ["450-469", "470-499", "500+", "20", "22", "24", "239,616", "275,558", "311,500"]
     },
+    "Cloud Mushroom": {
+          "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Cloud_Mushroom_Icon.png", "Cloud Mushroom", "450", "7", "The Sea of Clouds", "Camp Cloudtop", "9", "yellow", 60],
+          "adv": ["450-469", "470-499", "500+", "9", "9", "10", "116,640", "134,136", "151,632"]
+    },
     "Coethan Tea Leaves": {
-          "basic": ["botanytheme", 10, "res://UI/Icons/Botany/Coerthan_Tea_Leaves_Icon.png", "Coerthan Tea Leaves", "320", "7", "Coerthas Western Highlands", "Falcon's Nest", "13", "yellow"],
+          "basic": ["botanytheme", 10, "res://UI/Icons/Botany/Coerthan_Tea_Leaves_Icon.png", "Coerthan Tea Leaves", "320", "7", "Coerthas Western Highlands", "Falcon's Nest", "13", "yellow", 53],
           "adv": ["320-449", "450-499", "500+", "13", "14", "15", "124,416", "143,078", "161,740"]
     },
+    "Crownbrush": {
+          "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Crownbrush_Icon.png", "Crownbrush", "450", "-", "The Diadem", "-", "22", "yellow", 59],
+          "adv": ["450-469", "470-499", "500+", "22", "24", "26", "311,040", "357,696", "404,352"]
+    },
     "Crystallized Sap": {
-          "basic": ["botanytheme", 8, "res://UI/Icons/Botany/Crystallized_Sap_Icon.png", "Crystallized Sap", "450", "4", "The Churning Mists", "Zenith", "23", "yellow"],
+          "basic": ["botanytheme", 8, "res://UI/Icons/Botany/Crystallized_Sap_Icon.png", "Crystallized Sap", "450", "4", "The Churning Mists", "Zenith", "23", "yellow", 60],
           "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Cuprite": {
-        "basic": ["miningtheme", 2, "res://UI/Icons/Mining/Cuprite_Icon.png", "Cuprite", "450", "2", "The Dravanian Hinterlands", "Anyx Trine", "22", "yellow"],
+        "basic": ["miningtheme", 2, "res://UI/Icons/Mining/Cuprite_Icon.png", "Cuprite", "450", "2", "The Dravanian Hinterlands", "Anyx Trine", "22", "yellow", 59],
         "adv": ["450-469", "470-499", "500+", "22", "24", "26", "311,040", "357,696", "404,352"]
     },
+    "Daikon Radish": {
+          "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Daikon_Radish_Icon.png", "Daikon Radish", "450", "8", "Yanxia", "The House of the Fierce", "9", "yellow", 66],
+          "adv": ["450-469", "470-499", "500+", "9", "9", "11", "154,440", "177,606", "200,772"]
+    },
     "Daio Squid": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Daio_Squid_Icon.png", "Daio Squid", "1034", "-", "The Ruby Sea", "Crick", "12", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Daio_Squid_Icon.png", "Daio Squid", "1034", "-", "The Ruby Sea", "Onokoro", "12", "yellow", 68],
         "adv": ["1034-1104", "1105-1124", "1125+", "12", "13", "14", "479,650", "527,615", "575,580"],
         "fish": [0, "Live Shrimp, Bream Lure, Blue Bobbit", "The Isle of Zekki (X:8.3 Y:26.6)", "Any", "am"],
         "mooch": ["Ruby Shrimp", "res://UI/Icons/Fishing/Mooch/Ruby_Shrimp_Icon.png", "Live Shrimp"]
     },
+    "Darkdweller": {
+        "basic": ["fishingtheme", 12, "res://UI/Icons/Fishing/Darkdweller_Icon.png", "Darkdweller", "28", "-", "The Rak'tika Greatwood", "Slitherbough", "74", "white", 80],
+        "adv": ["28-30", "31", "32+", "74", "81", "88", "2,165,000", "2,381,500", "2,598,000"],
+        "fish": [8, "Baitbugs", "Woven Oath (X:8 Y:16)", "Fish Eyes, Fog", "am"],
+        "mooch": ["-", "-", "-"]
+    },
     "Deemster": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Deemster_Icon.png", "Deemster", "829", "-", "The Peaks", "Ala Gannha", "33", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Deemster_Icon.png", "Deemster", "829", "-", "The Peaks", "Ala Gannha", "33", "yellow", 70],
         "adv": ["829-885", "886-901", "902+", "33", "36", "39", "746,940", "821,634", "896,328"],
         "fish": [0, "Stonefly Larva", "The Ephor (X:31 Y:17)", "Wind", "am"],
         "mooch": ["-", "-", "-"]
     },
     "Diamond Pipira": {
-        "basic": ["fishingtheme", 2, "res://UI/Icons/Fishing/Diamond_Pipira_Icon.png", "Diamon Pipira", "440", "-", "The Rak'tika Greatwood", "-", "83", "yellow"],
+        "basic": ["fishingtheme", 2, "res://UI/Icons/Fishing/Diamond_Pipira_Icon.png", "Diamon Pipira", "440", "-", "The Rak'tika Greatwood", "Slitherbough", "83", "yellow", 76],
         "adv": ["440-470", "471-479", "480+", "83", "91", "99", "633,500", "760,200", "896,328"],
         "fish": [6, "Robber Ball, Baitbugs", "The Red Chalice (X:10 Y:21)", "Any", "pm"],
         "mooch": ["-", "-", "-"]
     },
+    "Dimythrite Ore": {
+        "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Dimythrite_Ore_Icon.png", "Dimythrite Ore", "470", "7", "Lakeland", "Fort Jobb", "10", "white", 80],
+        "adv": ["470-499", "500-529", "530+", "10", "11", "12", "866,000", "995,899", "1,125,800"]
+    },
+    "Dragon Obsidian": {
+        "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Dragon_Obsidian_Icon.png", "Dragon Obsidian", "240", "8", "Coerthas Western Highlands", "Falcon's Nest", "5", "yellow", 50],
+        "adv": ["240-339", "340-369", "370+", "5", "5", "6", "17,280", "19,872", "22,464"]
+    },
     "Dravanian Mistletoe": {
-          "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Dravanian_Mistletoe_Icon.png", "Dravanian Mistletoe", "400", "3", "The Churning Mists", "Zenith", "14", "yellow"],
+          "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Dravanian_Mistletoe_Icon.png", "Dravanian Mistletoe", "400", "3", "The Churning Mists", "Zenith", "14", "yellow", 54],
           "adv": ["400-449", "450-499", "500+", "14", "15", "16", "149,760", "172,224", "194,688"]
     },
     "Dravanian Paprika": {
-          "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Dravanian_Paprika_Icon.png", "Dravanian Paprika", "450", "4", "Coerthas Western Highlands", "Falcon's Nest", "23", "yellow"],
-          "adv": ["450-469", "470-499", "500+", "20", "25", "27", "357,600", "411,239", "464,880"]
+          "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Dravanian_Paprika_Icon.png", "Dravanian Paprika", "450", "4", "Coerthas Western Highlands", "Falcon's Nest", "23", "yellow", 60],
+          "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Dravanian Smelt": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Dravanian_Smelt_Icon.png", "Dravanian Smelt", "81", "-", "The Dravanian Forelands", "Tailfeather", "12", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Dravanian_Smelt_Icon.png", "Dravanian Smelt", "81", "-", "The Dravanian Forelands", "Tailfeather", "12", "yellow", 60],
         "adv": ["81-89", "90-91", "92+", "12", "13", "14", "4,470", "4,917", "5,364"],
         "fish": [0, "Brute Leech", "The Hundred Throes (X:31 Y:10)", "Any", "am"],
         "mooch": ["-", "-", "-"]
     },
     "Dravanian Squeaker": {
-        "basic": ["fishingtheme", 4, "res://UI/Icons/Fishing/Dravanian_Squeaker_Icon.png", "Dravanian Squeaker", "81", "-", "The Churning Mists", "Zenith", "12", "yellow"],
+        "basic": ["fishingtheme", 4, "res://UI/Icons/Fishing/Dravanian_Squeaker_Icon.png", "Dravanian Squeaker", "81", "-", "The Churning Mists", "Zenith", "12", "yellow", 55],
         "adv": ["158-169", "170-171", "172+", "10", "11", "12", "110,880", "121,968", "133,056"],
         "fish": [3, "Stonefly Nymph, Purse Web Spider, Brute Leech", "Weston Waters (X:9 Y:8)", "Any", "pm"],
         "mooch": ["-", "-", "-"]
     },
+    "Durium Ore": {
+        "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Durium_Ore_Icon.png", "Durium Ore", "450", "6", "Yanxia", "Namai", "9", "yellow", 68],
+        "adv": ["450-469", "470-499", "500+", "9", "9", "11", "191,860", "220,638", "249,418"]
+    },
+    "Durium Sand": {
+        "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Durium_Sand_Icon.png", "Durium Sand", "450", "2", "The Azim Steppe", "The Dawn Throne", "9", "yellow", 66],
+        "adv": ["450-469", "470-499", "500+", "9", "9", "11", "154,440", "177,606", "200,772"]
+    },
+    "Elder Pixie": {
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Elder_Pixie_Icon.png", "Elder Pixie", "128", "-", "Il Mheg", "Wolekdorf", "22", "yellow", 79],
+        "adv": ["128-145", "146-148", "149+", "22", "44", "83", "753,000", "941,250", "1,129,500"],
+        "fish": [0, "Normal Gig Head", "Central Longmirror Lake (X:29.1 Y:25.2)", "Truth of Oceans, Sauldia Ruby", "am"],
+        "mooch": ["-", "-", "-"]
+    },
     "Eryops": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Eryops_Icon.png", "Eryops", "690", "-", "The Rak'tika Greatwood", "-", "220", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Eryops_Icon.png", "Eryops", "690", "-", "The Rak'tika Greatwood", "Slitherbough", "220", "yellow", 76],
         "adv": ["690-737", "738-751", "752+", "220", "242", "260", "633,500", "696,850", "760,200"],
         "fish": [0, "Robber Ball", "Lake Tusi Mek'ta (X:9 Y:8)", "Any", "am"],
         "mooch": ["Clown Tetra", "res://UI/Icons/Fishing/Mooch/Clown_Tetra_Icon.png", "Robber Ball"]
     },
     "Eternal Eye": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Eternal_Eye_Icon.png", "Eternal Eye", "40", "-", "The Azim Steppe", "The Dawn Throne", "10", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Eternal_Eye_Icon.png", "Eternal Eye", "40", "-", "The Azim Steppe", "The Dawn Throne", "10", "yellow", 69],
         "adv": ["40-46", "47", "48+", "10", "19", "36", "216,520", "270,650", "324,780"],
         "fish": [0, "Small Gig Head", "Azim Khaat Eastern Lakebed (X:23 Y:23.7)", "Truth of Oceans", "am"],
         "mooch": ["-", "-", "-"]
     },
+    "Ethereal Cocoon": {
+          "basic": ["botanytheme", 8, "res://UI/Icons/Botany/Ethereal_Cocoon_Icon.png", "Ethereal Cocoon", "470", "4", "Lakeland", "Fort Jobb", "30", "white", 80],
+          "adv": ["470-499", "500-529", "530+", "30", "34", "39", "1,732,000", "1,991,799", "2,251,600"]
+    },
+    "Eventide Jade": {
+        "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Eventide_Jade_Icon.png", "Eventide Jade", "450", "2", "The Dravanian Forelands", "Anyx Trine", "10", "yellow", 60],
+        "adv": ["450-469", "470-499", "500+", "10", "10", "12", "134,100", "154,215", "174,330"]
+    },
+    "Extra Effervescent Water": {
+        "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Extra_Effervescent_Water_Icon.png", "Extra Effervescent Water", "450", "1", "The Rak'tika Greatwood", "Slitherbough", "14", "yellow", 76],
+        "adv": ["450-469", "470-499", "500+", "14", "15", "16", "506,800", "582,820", "658,840"]
+    },
     "Fangshi": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Fangshi_Icon.png", "Fangshi", "303", "-", "Yanxia", "Namai", "10", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Fangshi_Icon.png", "Fangshi", "303", "-", "Yanxia", "Namai", "10", "yellow", 70],
         "adv": ["303-343", "344-350", "351+", "10", "20", "38", "248,980", "311,225", "373,470"],
         "fish": [0, "Normal Gig Head", "The Sunken Junk (X:10 Y:34)", "Truth of Oceans", "am"],
         "mooch": ["-", "-", "-"]
     },
+    "Fossilized Dragon Bone": {
+        "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Fossilized_Dragon_Bone_Icon.png", "Fossilized Dragon Bone", "450", "6", "The Churning Mists", "Moghome", "8", "yellow", 56],
+        "adv": ["450-469", "470-499", "500+", "8", "8", "9", "77,760", "89,424", "101,088"]
+    },
     "Frost Cotton Boll": {
-          "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Frost_Cotton_Boll_Icon.png", "Frost Cotton Boll", "450", "5", "Coerthas Western Highlands", "Falcon's Nest", "23", "yellow"],
+          "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Frost_Cotton_Boll_Icon.png", "Frost Cotton Boll", "450", "5", "Coerthas Western Highlands", "Falcon's Nest", "23", "yellow", 60],
           "adv": ["450-469", "470-499", "500+", "20", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Glacier Core": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Glacier_Core_Icon.png", "Glacier Core", "310", "-", "Coerthas Western Highlands", "Falcon's Nest", "8", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Glacier_Core_Icon.png", "Glacier Core", "310", "-", "Coerthas Western Highlands", "Falcon's Nest", "8", "yellow", 51],
         "adv": ["310-331", "332-337", "338+", "8", "8", "9", "52,920", "58,212", "63,504"],
         "fish": [0, "Balloon Bug, Red Balloon, Giant Crane Fly", "Greytail Falls (X:35 Y:26)", "Snow or Blizzard", "am"],
         "mooch": ["Skyworm", "res://UI/Icons/Fishing/Mooch/Skyworm_Icon.png", "Balloon Bug, Red Balloon, Giant Crane Fly"]
     },
+    "Golden Lobster": {
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Golden_Lobster_Icon.png", "Golden Lobster", "208", "-", "Il Mheg", "Wolekdorf", "36", "yellow", 74],
+        "adv": ["208-223", "224-228", "229+", "36", "39", "43", "493,750", "543,125", "592,500"],
+        "fish": [0, "Marble Nymph, Robber Ball, Baitbugs", "Saint Fathric's Temple (X:34.9 Y:26.3)", "Any", "am"],
+        "mooch": ["-", "-", "-"]
+    },
     "Green Quartz": {
-          "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Green_Quartz_Icon.png", "Green Quartz", "400", "6", "The Churning Mists", "Moghome", "14", "yellow"],
+          "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Green_Quartz_Icon.png", "Green Quartz", "400", "6", "The Churning Mists", "Moghome", "14", "yellow", 55],
           "adv": ["400-449", "450-499", "500+", "14", "15", "16", "177,408", "204,019", "230,630"]
     },
+    "Gyr Abanian Alumen": {
+        "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Gyr_Abanian_Alumen_Icon.png", "Gyr Abanian Alumen", "450", "2", "The Fringes", "Castrum Oriens", "8", "yellow", 60],
+        "adv": ["450-469", "470-499", "500+", "8", "8", "10", "89,400", "102,809", "116,220"]
+    },
+    "Gyr Abanian Mineral Water": {
+        "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Gyr_Abanian_Mineral_Water_Icon.png", "Gyr Abanian Mineral Water", "450", "1", "The Fringes", "Castrum Oriens", "8", "yellow", 61],
+        "adv": ["450-469", "470-499", "500+", "8", "8", "10", "97,460", "112,078", "126,698"]
+    },
+    "Gyr Abanian Wheat": {
+          "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Gyr_Abanian_Wheat_Icon.png", "Gyr Abanian Wheat", "450", "3", "The Fringes", "Castrum Oriens", "8", "yellow", 60],
+          "adv": ["450-469", "470-499", "500+", "8", "8", "10", "89,400", "102,809", "116,220"]
+    },
     "Hak Bitterling": {
-        "basic": ["fishingtheme", 12, "res://UI/Icons/Fishing/Hak_Bitterling_Icon.png", "Hak Bitterling", "35", "-", "The Azim Steppe", "The Dawn Throne", "33", "yellow"],
+        "basic": ["fishingtheme", 12, "res://UI/Icons/Fishing/Hak_Bitterling_Icon.png", "Hak Bitterling", "35", "-", "The Azim Steppe", "The Dawn Throne", "33", "yellow", 70],
         "adv": ["35-38", "39", "40+", "33", "36", "39", "746,940", "821,634", "896,328"],
         "fish": [4, "Stonefly Larva", "Hak Khaal (X:29 Y:20)", "Rain, Othard Folklore Book", "am"],
         "mooch": ["-", "-", "-"]
     },
+    "Harcot": {
+          "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Harcot_Icon.png", "Harcot", "450", "2", "Lakeland", "Fort Jobb", "15", "yellow", 78],
+          "adv": ["450-469", "470-499", "500+", "15", "16", "18", "655,000", "753,250", "851,500"]
+    },
     "Heavens Lemon": {
-        "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Heavens_Lemon_Icon.png", "Heavens Lemon", "450", "2", "The Sea of Clouds", "Camp Cloudtop", "20", "yellow"],
+        "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Heavens_Lemon_Icon.png", "Heavens Lemon", "450", "2", "The Sea of Clouds", "Camp Cloudtop", "20", "yellow", 56],
         "adv": ["450-469", "470-499", "500+", "20", "22", "24", "207,360", "238,463", "269,568"]
     },
+    "Henodus": {
+        "basic": ["fishingtheme", 12, "res://UI/Icons/Fishing/Henodus_Icon.png", "Henodus", "343", "-", "Kholusia", "Stilltide", "314", "white", 80],
+        "adv": ["343-367", "368-374", "375+", "314", "345", "376", "2,165,000", "2,381,500", "2,598,000"],
+        "fish": [12, "-", "The Eastern Kholusian Coast (X:35.2, Y:35.8)", "Clouds or Fog, Norvrandt Folklore Book", "pm"],
+        "mooch": ["Spearhead Squid", "res://UI/Icons/Fishing/Mooch/Spearhead_Squid_Icon.png", "Short Bill Minnow, Moyebi Shrimp"]
+    },
+    "Highland Spring Water": {
+        "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Highland_Spring_Water_Icon.png", "Highland Spring Water", "450", "1", "Il Mheg", "Lydha Lran", "13", "yellow", 73],
+        "adv": ["450-469", "470-499", "500+", "13", "14", "15", "349,972", "402,467", "454,963"]
+    },
     "Honeydew Almonds": {
-        "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Honeydew_Almonds_Icon.png", "Honeydew Almonds", "450", "2", "The Sea of Clouds", "Ok' Zundu", "23", "yellow"],
+        "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Honeydew_Almonds_Icon.png", "Honeydew Almonds", "450", "2", "The Sea of Clouds", "Ok' Zundu", "23", "yellow", 60],
         "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Icepick": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Icepick_Icon.png", "Icepick", "105", "-", "Coerthas Western Highlands", "Falcon's Nest", "8", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Icepick_Icon.png", "Icepick", "105", "-", "Coerthas Western Highlands", "Falcon's Nest", "8", "yellow", 51],
         "adv": ["105-113", "114-115", "116+", "8", "8", "9", "52,920", "58,212", "63,504"],
         "fish": [0, "Caddisfly Larva, Stonefly Nymph, Purse Web Spider, Goblin Jig, Brute Leech", "South Banepool (X:21 Y:11)", "Any"],
         "mooch": ["-", "-", "-"]
     },
     "Illuminati Perch": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Illuminati_Perch_Icon.png", "Illuminati Perch", "826", "-", "The Dravanian Hinterlands", "Idyllshire", "12", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Illuminati_Perch_Icon.png", "Illuminati Perch", "826", "-", "The Dravanian Hinterlands", "Idyllshire", "12", "yellow", 59],
         "adv": ["826-882", "883-897", "898+", "12", "13", "14", "194,400", "213,840", "233,280"],
         "fish": [0, "Brute Leech, Goblin Jig, (Also Mooched from Sweetfish)", "Thaliak RIver (X:18 Y:18)", "Any"],
         "mooch": ["Hedgemole Cricket", "res://UI/Icons/Fishing/Mooch/Hedgemole_Cricket_Icon.png", "Stonefly Nymph, Purse Web Spider, Brute Leech"]
     },
     "Jhammel Ginger": {
-        "basic": ["botanytheme", 4, "res://UI/Icons/Botany/Jhammel_Ginger_Icon.png", "Jhammel Ginger", "470", "3", "The Lochs", "Porta Praetoria", "23", "yellow"],
+        "basic": ["botanytheme", 4, "res://UI/Icons/Botany/Jhammel_Ginger_Icon.png", "Jhammel Ginger", "470", "3", "The Lochs", "Porta Praetoria", "22", "yellow", 68],
         "adv": ["470-499", "500-529", "530+", "22", "25", "28", "767,440", "882,555", "997,672"]
     },
     "Killifish": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Killifish_Icon.png", "Killifish", "9", "-", "The Azim Steppe", "Reunion", "12", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Killifish_Icon.png", "Killifish", "9", "-", "The Azim Steppe", "Reunion", "12", "yellow", 65],
         "adv": ["9-10", "11", "12+", "12", "13", "14", "349,750", "384,725", "419,700"],
         "fish": [0, "Midge Larva", "Nem Khaal (X:31 Y:26)", "Clear"],
         "mooch": ["-", "-", "-"]
     },
+    "Koppranickel Ore": {
+        "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Koppranickel_Ore_Icon.png", "Koppranickel Ore", "450", "6", "The Ruby Sea", "Kugane", "8", "yellow", 63],
+        "adv": ["450-469", "470-499", "500+", "8", "8", "10", "116,180", "133,607", "151,034"]
+    },
+    "Larch Log": {
+        "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Larch_Log_Icon.png", "Larch Log", "450", "6", "The Ruby Sea", "Onokoro", "8", "yellow", 63],
+        "adv": ["450-469", "470-499", "500+", "8", "8", "10", "116,180", "133,607", "151,034"]
+    },
     "Lemonette": {
-        "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Lemonette_Icon.png", "Lemonette", "470", "2", "Kholusia", "Sharptongue Drip", "25", "white"],
+        "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Lemonette_Icon.png", "Lemonette", "470", "2", "Kholusia", "Sharptongue Drip", "25", "white", 80],
         "adv": ["470-499", "500-529", "530+", "25", "28", "32", "1,732,000", "1,991,799", "2,251,600"]
     },
     "Light Kidney Ore": {
-          "basic": ["miningtheme", 2, "res://UI/Icons/Mining/Light_Kidney_Ore_Icon.png", "Light Kidney Ore", "450", "3", "The Dravanian Hinterlands", "Anyx Trine", "20", "yellow"],
+          "basic": ["miningtheme", 2, "res://UI/Icons/Mining/Light_Kidney_Ore_Icon.png", "Light Kidney Ore", "450", "3", "The Dravanian Hinterlands", "Anyx Trine", "20", "yellow", 57],
           "adv": ["450-469", "470-499", "500+", "20", "22", "24", "239,616", "275,558", "311,500"]
     },
+    "Lignum Vitae Log": {
+        "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Lignum_Vitae_Log_Icon.png", "Lignum Vitae Log", "470", "6", "Lakeland", "The Ostall Imperative", "10", "white", 80],
+        "adv": ["470-499", "500-529", "530+", "10", "11", "12", "866,000", "995,899", "1,125,800"]
+    },
+    "Limonite": {
+          "basic": ["miningtheme", 8, "res://UI/Icons/Mining/Limonite_Icon.png", "Limonite", "400", "4", "The Dravanian Forelands", "Tailfeather", "14", "yellow", 54],
+          "adv": ["400-449", "450-499", "500+", "14", "15", "16", "149,760", "172,224", "194,688"]
+    },
+    "Little Bismarck": {
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Little_Bismarck_Icon.png", "Little_Bismarck", "750", "-", "Lakeland", "The Ostall Imperative", "18", "yellow", 74],
+        "adv": ["750-848", "849-864", "865+", "18", "36", "68", "395,000", "493,750", "592,500"],
+        "fish": [0, "Large Gig Head", "Southeast Source (X:11.3 Y:35.4)", "Truth of Oceans, Noblefish"],
+        "mooch": ["-", "-", "-"]
+    },
     "Loosetongue": {
-        "basic": ["fishingtheme", 1, "res://UI/Icons/Fishing/Loosetongue_Icon.png", "Loosetongue", "2286", "-", "The Dravanian Hinterlands", "Anyx Trine", "33", "yellow"],
+        "basic": ["fishingtheme", 1, "res://UI/Icons/Fishing/Loosetongue_Icon.png", "Loosetongue", "2286", "-", "The Dravanian Hinterlands", "Anyx Trine", "33", "yellow", 60],
         "adv": ["2286-2441", "2442-2484", "2485+", "33", "36", "39", "268,200", "295,020", "321,840"],
         "fish": [7, "Brute Leech, (Also Mooched from Sweetfish)", "Upper Thaliak River (X:22 Y:35)", "Dravanian Folklore Book", "pm"],
         "mooch": ["Hedgemole Cricket", "res://UI/Icons/Fishing/Mooch/Hedgemole_Cricket_Icon.png", "Stonefly Nymph, Purse Web Spider, Brute Leech"]
     },
     "Lotus Root": {
-        "basic": ["botanytheme", 8, "res://UI/Icons/Botany/Lotus_Root_Icon.png", "Lotus Root", "450", "7", "Yanxia", "The House of the Fierce", "20", "yellow"],
+        "basic": ["botanytheme", 8, "res://UI/Icons/Botany/Lotus_Root_Icon.png", "Lotus Root", "450", "7", "Yanxia", "The House of the Fierce", "20", "yellow", 66],
         "adv": ["450-469", "470-499", "500+", "20", "23", "26", "617,760", "710,424", "803,088"]
     },
     "Lumythrite Ore": {
-          "basic": ["miningtheme", 2, "res://UI/Icons/Mining/Lumythrite_Ore_Icon.png", "Lumythrite Ore", "450", "2", "The Churning Mists", "Zenith", "23", "yellow"],
+          "basic": ["miningtheme", 2, "res://UI/Icons/Mining/Lumythrite_Ore_Icon.png", "Lumythrite Ore", "450", "2", "The Churning Mists", "Zenith", "23", "yellow", 60],
           "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Meteorite": {
-          "basic": ["miningtheme", 8, "res://UI/Icons/Mining/Meteorite_Icon.png", "Meteorite", "450", "3", "The Sea of Clouds", "Ok' Zundu", "23", "yellow"],
+          "basic": ["miningtheme", 8, "res://UI/Icons/Mining/Meteorite_Icon.png", "Meteorite", "450", "3", "The Sea of Clouds", "Ok' Zundu", "23", "yellow", 60],
           "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
+    "Mist Spinach": {
+        "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Mist_Spinach_Icon.png", "Mist Spinach", "470", "6", "The Rak'tika Greatwood", "Fanow", "23", "white", 78],
+        "adv": ["470-499", "500-529", "530+", "23", "26", "29", "1,506,500", "1,991,799", "1,703,000"]
+    },
     "Mitsukuri Shark": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Mitsukuri_Shark_Icon.png", "Mitsukuri Shark", "819", "-", "The Ruby Sea", "Crick", "10", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Mitsukuri_Shark_Icon.png", "Mitsukuri Shark", "819", "-", "The Ruby Sea", "Onokoro", "10", "yellow", 68],
         "adv": ["819-926", "927-943", "944+", "10", "19", "36", "191,860", "239,825", "287,790"],
         "fish": [0, "Large Gig Head", "The Kobayashi Maru (X:38.8 Y:6.3)", "Truth of Oceans"],
         "mooch": ["-", "-", "-"]
     },
+    "Molybdenum Ore": {
+          "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Molybdenum_Ore_Icon.png", "Molybdenum Ore", "470", "4", "The Lochs", "Porta Praetoria", "10", "yellow", 70],
+          "adv": ["470-499", "500-529", "530+", "10", "11", "13", "248,980", "286,327", "323,674"]
+    },
     "Moogle Spirit": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Moogle_Spirit_Icon.png", "Moogle Spirit", "1062", "-", "The Sea of Clouds", "Ok' Zundu", "12", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Moogle_Spirit_Icon.png", "Moogle Spirit", "1062", "-", "The Sea of Clouds", "Ok' Zundu", "12", "yellow", 60],
         "adv": ["1062-1193", "1194-1214", "1215+", "12", "13", "14", "268,200", "295,020", "321,840"],
         "fish": [0, "Giant Crane Fly", "Mok Oogl Island (X:15 Y:7)", "Any"],
         "mooch": ["Sky Faerie", "res://UI/Icons/Fishing/Mooch/Sky_Faerie_Icon.png", "Red Balloon, Giant Crane Fly"]
     },
     "Morel": {
-        "basic": ["botanytheme", 4, "res://UI/Icons/Botany/Morel_Icon.png", "Morel", "450", "7", "The Dravanian Hinterlands", "Idyllshire", "22", "yellow"],
+        "basic": ["botanytheme", 4, "res://UI/Icons/Botany/Morel_Icon.png", "Morel", "450", "7", "The Dravanian Hinterlands", "Idyllshire", "22", "yellow", 59],
         "adv": ["450-469", "470-499", "500+", "22", "24", "26", "311,040", "357,696", "404,352"]
     },
     "Mosasaur": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Mosasaur_Icon.png", "Mosasaur", "834", "-", "The Lochs", "Porta Praetoria", "10", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Mosasaur_Icon.png", "Mosasaur", "834", "-", "The Lochs", "Porta Praetoria", "10", "yellow", 70],
         "adv": ["834-943", "944-960", "961+", "10", "20", "38", "248,980", "311,225", "373,470"],
         "fish": [0, "Large Gig Head", "Loch Seld Central Lakebed (X:20 Y:23)", "Truth of Oceans"],
         "mooch": ["-", "-", "-"]
     },
+    "Night Pepper": {
+        "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Night_Pepper_Icon.png", "Night Pepper", "450", "3", "Amh Araeng", "Mord Souq", "12", "yellow", 70],
+        "adv": ["450-469", "470-499", "500+", "12", "13", "14", "248,980", "286,327", "323,674"]
+    },
     "Noontide Oscar": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Noontide_Oscar_Icon.png", "Noontide Oscar", "258", "-", "The Churning Mists", "Moghome", "12", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Noontide_Oscar_Icon.png", "Noontide Oscar", "258", "-", "The Churning Mists", "Moghome", "12", "yellow", 57],
         "adv": ["258-276", "277-280", "281+", "12", "13", "14", "149,760", "164,736", "179,712"],
         "fish": [0, "Purse Web Spider, Brute Leech", "Eli Tohm (X:36 Y:30)", "Any"],
         "mooch": ["-", "-", "-"]
     },
     "Old-growth Camphorwood Log": {
-        "basic": ["botanytheme", 8, "res://UI/Icons/Botany/Old-growth_Camphorwood_Log_Icon.png", "Old-growth Camphorwood Log", "450", "6", "The Churning Mists", "Zenith", "23", "yellow"],
+        "basic": ["botanytheme", 8, "res://UI/Icons/Botany/Old-growth_Camphorwood_Log_Icon.png", "Old-growth Camphorwood Log", "450", "6", "The Churning Mists", "Zenith", "23", "yellow", 60],
         "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Old World Fig": {
-          "basic": ["botanytheme", 2, "res://UI/Icons/Botany/Old_World_Fig_Icon.png", "Old World Fig", "240", "2", "The Dravanian Forelands", "Tailfeather", "12", "yellow"],
+          "basic": ["botanytheme", 2, "res://UI/Icons/Botany/Old_World_Fig_Icon.png", "Old World Fig", "240", "2", "The Dravanian Forelands", "Tailfeather", "12", "yellow", 50],
           "adv": ["240-339", "340-369", "370+", "12", "13", "14", "69,120", "79,488", "89,856"]
     },
+    "Ondo Harpoon": {
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Ondo_Harpoon_Icon.png", "Ondo Harpoon", "517", "-", "The Tempest", "The Ondo Cups", "32", "white", 80],
+        "adv": ["517-552", "553-563", "564+", "32", "35", "38", "2,165,000", "2,381,500", "2,598,000"],
+        "fish": [0, "Short Bill Minnow, Squid Strip", "The Flounders' Floor (X.11.2 Y:6.6)", "Any"],
+        "mooch": ["-", "-", "-"]
+    },
     "Othardian Plum": {
-        "basic": ["botanytheme", 2, "res://UI/Icons/Botany/Othardian_Plum_Icon.png", "Othardian Plum", "470", "2", "Azim Steppe", "The Dawn Throne", "23", "yellow"],
+        "basic": ["botanytheme", 2, "res://UI/Icons/Botany/Othardian_Plum_Icon.png", "Othardian Plum", "470", "2", "Azim Steppe", "The Dawn Throne", "23", "yellow", 70],
         "adv": ["470-499", "500-529", "530+", "23", "26", "29", "995,920", "1,145,308", "1,294,696"]
     },
     "Palladium Ore": {
-          "basic": ["miningtheme", 4, "res://UI/Icons/Mining/Palladium_Ore_Icon.png", "Palladium Ore", "470", "6", "Yanxia", "The House of the Fierce", "23", "yellow"],
+          "basic": ["miningtheme", 4, "res://UI/Icons/Mining/Palladium_Ore_Icon.png", "Palladium Ore", "470", "6", "Yanxia", "The House of the Fierce", "23", "yellow", 70],
           "adv": ["470-499", "500-529", "530+", "23", "26", "29", "995,920", "1,145,308", "1,294,696"]
     },
     "Pancake Octopus": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Pancake_Octopus_Icon.png", "Pancake Octopus", "66", "-", "The Tempest", "The Ondo Cups", "25", "white"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Pancake_Octopus_Icon.png", "Pancake Octopus", "66", "-", "The Tempest", "The Ondo Cups", "25", "white", 80],
         "adv": ["66-71", "72-73", "74+", "25", "27", "30", "2,165,000", "2,381,500", "2,598,000"],
         "fish": [0, "Short Bill Minnow", "East Caliban Gap (X:9 Y:16)", "Any"],
         "mooch": ["-", "-", "-"]
     },
     "Pearl Sprouts": {
-          "basic": ["botanytheme", 10, "res://UI/Icons/Botany/Pearl_Sprouts_Icon.png", "Pearl Sprouts", "320", "6", "Coerthas Western Highlands", "Falcon's Nest", "13", "yellow"],
+          "basic": ["botanytheme", 10, "res://UI/Icons/Botany/Pearl_Sprouts_Icon.png", "Pearl Sprouts", "320", "6", "Coerthas Western Highlands", "Falcon's Nest", "13", "yellow", 52],
           "adv": ["320-449", "450-499", "500+", "13", "14", "15", "101,376", "116,582", "131,788"]
     },
+    "Periwinkle": {
+          "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Periwinkle_Icon.png", "Periwinkle", "450", "2", "The Dravanian Forelands", "Anyx Trine", "10", "yellow", 60],
+          "adv": ["450-469", "470-499", "500+", "10", "11", "12", "134,100", "154,215", "174,330"]
+    },
+    "Platinum Guppy": {
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Platinum_Guppy_Icon.png", "Platinum Guppy", "17", "-", "Lakeland", "The Ostall Imperative", "42", "white", 80],
+        "adv": ["17-19", "20", "21+", "42", "46", "50", "2,165,000", "2,381,500", "2,598,000"],
+        "fish": [0, "Baitbugs", "The Rusted Resovoir (X:11.9 Y:21.5)", "Clear"],
+        "mooch": ["-", "-", "-"]
+    },
     "Prismstone": {
-          "basic": ["miningtheme", 4, "res://UI/Icons/Mining/Prismstone_Icon.png", "Prismstone", "470", "7", "Il Mheg", "Saint Fathric's Temple", "30", "white"],
+          "basic": ["miningtheme", 4, "res://UI/Icons/Mining/Prismstone_Icon.png", "Prismstone", "470", "7", "Il Mheg", "Saint Fathric's Temple", "30", "white", 80],
           "adv": ["470-499", "500-529", "530+", "30", "34", "39", "1,732,000", "1,991,799", "2,251,600"]
     },
     "Porcini": {
-          "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Porcini_Icon.png", "Porcini", "240", "7", "The Churning Mists", "Zenith", "12", "yellow"],
+          "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Porcini_Icon.png", "Porcini", "240", "7", "The Churning Mists", "Zenith", "12", "yellow", 76],
           "adv": ["240-339", "340-369", "370+", "12", "13", "14", "84,672", "97,372", "110,073"]
     },
     "Pyrite": {
-          "basic": ["miningtheme", 8, "res://UI/Icons/Mining/Pyrite_Icon.png", "Pyrite", "240", "3", "The Dravanian Forelands", "Anyx Trine", "12", "yellow"],
+          "basic": ["miningtheme", 8, "res://UI/Icons/Mining/Pyrite_Icon.png", "Pyrite", "240", "3", "The Dravanian Forelands", "Anyx Trine", "12", "yellow", 51],
           "adv": ["240-339", "340-369", "370+", "12", "13", "14", "84,672", "97,372", "110,073"]
     },
     "Rak'tika Goby": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Rak'tika_Goby_Icon.png", "Rak'tika Goby", "59", "-", "The Rak'tika Greatwood", "Slitherbough", "22", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Rak'tika_Goby_Icon.png", "Rak'tika Goby", "59", "-", "The Rak'tika Greatwood", "Slitherbough", "22", "yellow", 79],
         "adv": ["59-67", "68-69", "70+", "22", "44", "83", "753,000", "941,250", "1,129,500"],
         "fish": [0, "Small Gig Head", "North Lake Tusi Mek'ta (X:5 Y:26)", "Truth of Oceans"],
         "mooch": ["-", "-", "-"]
     },
     "Raw Azurite": {
-          "basic": ["miningtheme", 4, "res://UI/Icons/Mining/Raw_Azurite_Icon.png", "Raw Azurite", "450", "7", "Azim Steppe", "The Dawn Throne", "20", "yellow"],
+          "basic": ["miningtheme", 4, "res://UI/Icons/Mining/Raw_Azurite_Icon.png", "Raw Azurite", "450", "7", "Azim Steppe", "The Dawn Throne", "20", "yellow", 66],
           "adv": ["450-469", "470-499", "500+", "20", "23", "26", "617,760", "710,424", "803,088"]
     },
     "Raw Diaspore": {
-          "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Raw_Diaspore_Icon.png", "Raw Diaspore", "450", "6", "Sextuplet Shallow", "Il Mheg", "35", "yellow"],
+          "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Raw_Diaspore_Icon.png", "Raw Diaspore", "450", "6", "Sextuplet Shallow", "Il Mheg", "35", "yellow", 72],
           "adv": ["450-469", "470-499", "500+", "35", "38", "45", "622,240", "715,576", "808,912"]
     },
     "Raw Hematite": {
-          "basic": ["miningtheme", 2, "res://UI/Icons/Mining/Raw_Hematite_Icon.png", "Raw Hematite", "450", "8", "Kholusia", "Govener's Row", "25", "yellow"],
+          "basic": ["miningtheme", 2, "res://UI/Icons/Mining/Raw_Hematite_Icon.png", "Raw Hematite", "450", "8", "Kholusia", "Govener's Row", "25", "yellow", 70],
           "adv": ["450-469", "470-499", "500+", "25", "27", "32", "535,307", "615,603", "695,899"]
     },
     "Raw Imperial Jade": {
-          "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Raw_Imperial_Jade_Icon.png", "Raw Imperial Jade", "470", "6", "Yanxia", "The House of the Fierce", "22", "yellow"],
+          "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Raw_Imperial_Jade_Icon.png", "Raw Imperial Jade", "470", "6", "Yanxia", "The House of the Fierce", "22", "yellow", 68],
           "adv": ["470-499", "500-529", "530+", "22", "25", "28", "767,440", "882,555", "997,672"]
     },
+    "Raw Onyx": {
+          "basic": ["miningtheme", 12, "res://UI/Icons/Mining/Raw_Onyx_Icon.png", "Raw Onyx", "470", "7", "The Tempest", "The Macarenses Angle", "25", "white", 80],
+          "adv": ["470-499", "500-529", "530+", "25", "28", "32", "1,732,000", "1,991,799", "2,251,600"]
+    },
+    "Raw Petalite": {
+          "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Raw_Petalite_Icon.png", "Raw Petalite", "470", "8", "Lakeland", "Fort Jobb", "23", "white", 78],
+          "adv": ["470-499", "500-529", "530+", "23", "26", "29", "1,310,000", "1,506,500", "1,703,000"]
+    },
     "Raw Rhodonite": {
-          "basic": ["miningtheme", 8, "res://UI/Icons/Mining/Raw_Rhodonite_Icon.png", "Raw Rhodonite", "470", "7", "The Peaks", "Ala Gannha", "23", "yellow"],
+          "basic": ["miningtheme", 8, "res://UI/Icons/Mining/Raw_Rhodonite_Icon.png", "Raw Rhodonite", "470", "7", "The Peaks", "Ala Gannha", "23", "yellow", 70],
           "adv": ["470-499", "500-529", "530+", "23", "26", "29", "995,920", "1,145,308", "1,294,696"]
     },
     "Raw Star Spinel": {
-          "basic": ["miningtheme", 12, "res://UI/Icons/Mining/Raw_Star_Spinel_Icon.png", "Raw Star Spinel", "450", "8", "Onokoro", "Ruby Sea", "13", "yellow"],
+          "basic": ["miningtheme", 12, "res://UI/Icons/Mining/Raw_Star_Spinel_Icon.png", "Raw Star Spinel", "450", "8", "Onokoro", "Ruby Sea", "13", "yellow", 63],
           "adv": ["450-469", "470-499", "500+", "13", "14", "16", "464,720", "534,428", "604,136"]
     },
     "Raw Triphane": {
-          "basic": ["miningtheme", 2, "res://UI/Icons/Mining/Raw_Triphane_Icon.png", "Raw Triphane", "450", "6", "The Fringes", "Rhalgr's Reach", "12", "yellow"],
+          "basic": ["miningtheme", 2, "res://UI/Icons/Mining/Raw_Triphane_Icon.png", "Raw Triphane", "450", "6", "The Fringes", "Rhalgr's Reach", "12", "yellow", 60],
           "adv": ["450-469", "470-499", "500+", "12", "13", "15", "357,600", "411,239", "464,880"]
     },
+    "Raw Triplite": {
+          "basic": ["miningtheme", 12, "res://UI/Icons/Mining/Raw_Triplite_Icon.png", "Raw Triplite", "450", "7", "Amh Araeng", "Twine", "40", "yellow", 80],
+          "adv": ["450-469", "470-499", "500+", "40", "44", "52", "1,013,600", "1,165,640", "1,317,680"]
+    },
     "Red Alumen": {
-          "basic": ["miningtheme", 10, "res://UI/Icons/Mining/Red_Alumen_Icon.png", "Red Alumen", "450", "2", "Asyz Lla", "Helix", "23", "yellow"],
+          "basic": ["miningtheme", 10, "res://UI/Icons/Mining/Red_Alumen_Icon.png", "Red Alumen", "450", "2", "Asyz Lla", "Helix", "23", "yellow", 60],
           "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Red Quartz": {
-        "basic": ["miningtheme", 10, "res://UI/Icons/Mining/Red_Quartz_Icon.png", "Red Quartz", "450", "6", "The Sea of Clouds", "Ok' Zundu", "22", "yellow"],
+        "basic": ["miningtheme", 10, "res://UI/Icons/Mining/Red_Quartz_Icon.png", "Red Quartz", "450", "6", "The Sea of Clouds", "Ok' Zundu", "22", "yellow", 58],
         "adv": ["450-469", "470-499", "500+", "22", "24", "26", "274,176", "315,302", "356,428"]
     },
     "Rhea": {
-        "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Rhea_Icon.png", "Rhea", "470", "4", "Azim Steppe", "The Dawn Throne", "23", "yellow"],
+        "basic": ["botanytheme", 12, "res://UI/Icons/Botany/Rhea_Icon.png", "Rhea", "470", "4", "Azim Steppe", "The Dawn Throne", "23", "yellow", 70],
         "adv": ["470-499", "500-529", "530+", "23", "26", "29", "995,920", "1,145,308", "1,294,696"]
     },
     "Russet Popoto": {
-        "basic": ["botanytheme", 8, "res://UI/Icons/Botany/Russet_Popoto_Icon.png", "Russet Popoto", "450", "7", "Ahm Araeng", "The Dragging Tail", "40", "yellow"],
+        "basic": ["botanytheme", 8, "res://UI/Icons/Botany/Russet_Popoto_Icon.png", "Russet Popoto", "450", "7", "Ahm Araeng", "The Dragging Tail", "40", "yellow", 76],
         "adv": ["450-469", "470-499", "500+", "40", "44", "52", "1,013,600", "1,165,640", "1,317,680"]
     },
     "Samurai Fish": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Samurai_Fish_Icon.png", "Samurai Fish", "14", "-", "Yanxia", "The House of the Fierce", "12", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Samurai_Fish_Icon.png", "Samurai Fish", "14", "-", "Yanxia", "The House of the Fierce", "12", "yellow", 67],
         "adv": ["14-15", "16", "17+", "12", "13", "14", "428,750", "471,625", "514,500"],
         "fish": [0, "Midge Larva, Stonefly Larva", "Doma Castle (X:14 Y:7)", "Any"],
         "mooch": ["-", "-", "-"]
     },
+    "Sandalwood Log": {
+        "basic": ["botanytheme", 2, "res://UI/Icons/Botany/Sandalwood_Log_Icon.png", "Sandalwood Log", "470", "6", "The Rak'tika Greatwood", "Slitherbough", "30", "white", 80],
+        "adv": ["470-499", "500-529", "530+", "30", "34", "39", "1,732,000", "1,991,799", "2,251,600"]
+    },
     "Sculptor": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Sculptor_Icon.png", "Sculptor", "1727", "-", "The Lochs", "Porta Praetoria", "680", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Sculptor_Icon.png", "Sculptor", "1727", "-", "The Lochs", "Porta Praetoria", "680", "yellow", 70],
         "adv": ["1727-1844", "1845-1877", "1878+", "680", "748", "816", "746,940", "821,634", "896,328"],
         "fish": [0, "-", "Loch Seld (X:21 Y:21)", "Gyr Abania Folklore Book"],
         "mooch": ["Rock Saltfish", "res://UI/Icons/Fishing/Mooch/Rock_Saltfish_Icon.png", "Silkworm"]
     },
     "Seraphim": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Seraphim_Icon.png", "Seraphim", "49", "-", "Yanxia", "Namai", "12", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Seraphim_Icon.png", "Seraphim", "49", "-", "Yanxia", "Namai", "12", "yellow", 70],
         "adv": ["49-53", "54", "55+", "12", "13", "14", "746,940", "821,634", "896,328"],
         "fish": [0, "Stonefly Larva, Suspending Minnow", "The One River (X:11 Y:33)", "Any"],
         "mooch": ["-", "-", "-"]
     },
     "Seventh Heaven": {
-        "basic": ["botanytheme", 4, "res://UI/Icons/Botany/Seventh_Heaven_Icon.png", "Seventh Heaven", "450", "1", "The Churning Mists", "Moghomg", "23", "yellow"],
+        "basic": ["botanytheme", 4, "res://UI/Icons/Botany/Seventh_Heaven_Icon.png", "Seventh Heaven", "450", "1", "The Churning Mists", "Moghomg", "23", "yellow", 60],
         "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Silken Koi": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Silken_Koi_Icon.png", "Silken Koi", "690", "-", "Yanxia", "Namai", "33", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Silken_Koi_Icon.png", "Silken Koi", "690", "-", "Yanxia", "Namai", "33", "yellow", 70],
         "adv": ["690-737", "738-751", "752+", "33", "36", "39", "746,940", "821,634", "896,328"],
         "fish": [0, "Stonefly Larva", "Plum Spring (X:11 Y:33)", "Rain, Fish Eyes, Othard Folklore Book"],
         "mooch": ["-", "-", "-"]
     },
     "Silken Sunfish": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Silken_Sunfish_Icon.png", "Silken Sunfish", "767", "-", "The Lochs", "Porta Praetoria", "10", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Silken_Sunfish_Icon.png", "Silken Sunfish", "767", "-", "The Lochs", "Porta Praetoria", "10", "yellow", 69],
         "adv": ["767-867", "868-883", "884+", "10", "19", "36", "216,520", "270,650", "324,780"],
         "fish": [0, "Large Gig Head", "Loch Seld Central Lakebed (X:20 Y:23)", "Truth of Oceans"],
         "mooch": ["-", "-", "-"]
     },
     "Smithsonite Ore": {
-          "basic": ["miningtheme", 8, "res://UI/Icons/Mining/Smithsonite_Ore_Icon.png", "Smithsonite Ore", "450", "2", "The Sea of Clouds", "Ok' Zundu", "23", "yellow"],
+          "basic": ["miningtheme", 8, "res://UI/Icons/Mining/Smithsonite_Ore_Icon.png", "Smithsonite Ore", "450", "2", "The Sea of Clouds", "Ok' Zundu", "23", "yellow", 60],
           "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Snurbleberry": {
-        "basic": ["botanytheme", 10, "res://UI/Icons/Botany/Snurbleberry_Icon.png", "Snurbleberry", "450", "2", "The Dravanian Hinterlands", "Anyx Trine", "23", "yellow"],
+        "basic": ["botanytheme", 10, "res://UI/Icons/Botany/Snurbleberry_Icon.png", "Snurbleberry", "450", "2", "The Dravanian Hinterlands", "Anyx Trine", "23", "yellow", 60],
         "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Sorcerer Fish": {
-        "basic": ["fishingtheme", 8, "res://UI/Icons/Fishing/Sorcerer_Fish_Icon.png", "Sorcerer Fish", "646", "-", "Coerthas Western Highlands", "Falcon's Nest", "9", "yellow"],
+        "basic": ["fishingtheme", 8, "res://UI/Icons/Fishing/Sorcerer_Fish_Icon.png", "Sorcerer Fish", "646", "-", "Coerthas Western Highlands", "Falcon's Nest", "9", "yellow", 53],
         "adv": ["646-690", "691-702", "703+", "9", "9", "10", "77,760", "85,536", "93,312"],
         "fish": [11, "Caddisfly Larva, Stonefly Nymph, Goblin Jig, Brute Leech, (Also Mooched from Ice Faerie)", "Unfrozen Pond (X:22 Y:35)", "Any", "am"],
         "mooch": ["Abalathian Smelt", "res://UI/Icons/Fishing/Mooch/Abalathian_Smelt_Icon.png", "Syrphid Basket, Silver Spoon Lure, Sinking Minnow, Honey Worm, Wildfowl Fly, Spinner, Stem Borer, Mythril Spoon Lure, Snurble Fly, Glowworm, Rainbow Spoon Lure, Spinnerbait, Streamer, Caddisfly Larva, Stonefly Nymph, Purse Web Spider, Brute Leech"]
     },
     "Soul of the Stallion": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Soul_of_the_Stallion_Icon.png", "Soul of the Stallion", "50", "-", "The Azim Steppe", "The Dawn Throne", "10", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Soul_of_the_Stallion_Icon.png", "Soul of the Stallion", "50", "-", "The Azim Steppe", "The Dawn Throne", "10", "yellow", 70],
         "adv": ["50-57", "58", "59+", "10", "20", "38", "369,300", "461,625", "553,950"],
         "fish": [0, "Small Gig Head", "Azim Khaat Eastern Lakebed (X:23 Y:23)", "Truth of Oceans"],
         "mooch": ["-", "-", "-"]
     },
     "Stupendemys": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Stupendemys_Icon.png", "Stupendemys", "1429", "-", "Azys Lla", "Helix", "22", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Stupendemys_Icon.png", "Stupendemys", "1429", "-", "Azys Lla", "Helix", "22", "yellow", 60],
         "adv": ["1429-1526", "1527-1553", "1554+", "22", "24", "26", "268,200", "295,020", "321,840"],
         "fish": [0, "Giant Crane Fly", "The Habisphere (X:38 Y:18)", "Fair, Clouds, Thunder, Abalathian Folklore Book"],
         "mooch": ["Rudderfish", "res://UI/Icons/Fishing/Mooch/Rudderfish_Icon.png", "Red Balloon, Sky Faerie (Mooch)"]
     },
     "Swordfish": {
-        "basic": ["fishingtheme", 8, "res://UI/Icons/Fishing/Swordfish_Icon.png", "Swordfish", "1002", "-", "The Ruby Sea", "Crick", "33", "yellow"],
+        "basic": ["fishingtheme", 8, "res://UI/Icons/Fishing/Swordfish_Icon.png", "Swordfish", "1002", "-", "The Ruby Sea", "Onokoro", "33", "yellow", 70],
         "adv": ["1002-1070", "1071-1090", "1091+", "33", "36", "39", "746,940", "821,634", "896,328"],
         "fish": [6, "Blue Bobbit, Bream Lure", "Azim Khaat Eastern Lakebed (X:23 Y:23)", "Clouds, Wind, Fish Eyes, Othard Folklore Book", "am"],
         "mooch": ["-", "-", "-"]
     },
     "Sun Mica": {
-          "basic": ["miningtheme", 4, "res://UI/Icons/Mining/Sun_Mica_Icon.png", "Sun Mica", "450", "2", "The Sea of Clouds", "Camp Cloudtop", "23", "yellow"],
+          "basic": ["miningtheme", 4, "res://UI/Icons/Mining/Sun_Mica_Icon.png", "Sun Mica", "450", "2", "The Sea of Clouds", "Camp Cloudtop", "23", "yellow", 60],
           "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Tao Bitterling": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Tao_Bitterling_Icon.png", "Tao Bitterling", "49", "-", "The Azim Steppe", "The Dawn Throne", "12", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Tao_Bitterling_Icon.png", "Tao Bitterling", "49", "-", "The Azim Steppe", "The Dawn Throne", "12", "yellow", 67],
         "adv": ["49-53", "54", "55+", "12", "13", "14", "428,750", "471,625", "514,500"],
         "fish": [0, "Midge Larva Stonefly Larva", "Tao Khaal (X:16 Y:14)", "Any"],
         "mooch": ["-", "-", "-"]
     },
+    "Tektite": {
+          "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Tektite_Icon.png", "Tektite", "450", "4", "The Churning Mists", "Moghome", "9", "yellow", 59],
+          "adv": ["450-469", "470-499", "500+", "9", "9", "10", "116,640", "134,136", "151,632"]
+    },
+    "Thorned Lizard": {
+        "basic": ["fishingtheme", 10, "res://UI/Icons/Fishing/Thorned_Lizard_Icon.png", "Thorned Lizard", "2077", "-", "Amh Araeng", "Twine", "416", "white", 80],
+        "adv": ["2077-2218", "2219-2258", "2259+", "416", "457", "499", "2,165,000", "2,381,500", "2,598,000"],
+        "fish": [8, "-", "The Hills of Amber (X:15.5, Y:14.8)", "Heat Wave or Clear or Fair", "am"],
+        "mooch": ["Web-footed Sand Gecko", "res://UI/Icons/Fishing/Mooch/Web-footed_Sand_Gecko_Icon.png", "Desert Dessert Frog, Jerked Ovim"]
+    },
     "Thousandfang": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Thousandfang_Icon.png", "Thousandfang", "837", "-", "The Ruby Sea", "Crick", "10", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Thousandfang_Icon.png", "Thousandfang", "837", "-", "The Ruby Sea", "Onokoro", "10", "yellow", 70],
         "adv": ["837-946", "947-963", "964+", "10", "20", "38", "248,980", "311,225", "373,470"],
         "fish": [0, "Large Gig Head", "The Kobayashi Maru (X:38.8 Y:6.3)", "Truth of Oceans"],
         "mooch": ["-", "-", "-"]
     },
     "Thunderbolt Eel": {
-        "basic": ["fishingtheme", 10, "res://UI/Icons/Fishing/Thunderbolt_Eel_Icon.png", "Thunderbolt Eel", "761", "-", "The Dravanian Forelands", "Tailfeather", "22", "yellow"],
+        "basic": ["fishingtheme", 10, "res://UI/Icons/Fishing/Thunderbolt_Eel_Icon.png", "Thunderbolt Eel", "761", "-", "The Dravanian Forelands", "Tailfeather", "22", "yellow", 60],
         "adv": ["761-813", "814-827", "828+", "22", "24", "26", "268,200", "295,020", "321,840"],
         "fish": [6, "Bladed Steel Jig, Brute Leech", "The Iron Feast (X:31 Y:5)", "Any", "pm"],
         "mooch": ["Blueclaw Shrimp", "res://UI/Icons/Fishing/Mooch/Blueclaw_Shrimp_Icon.png", "Stonefly Nymph, Purse Web Spider, Brute Leech"]
     },
     "Tiny Axolotl": {
-        "basic": ["fishingtheme", 9, "res://UI/Icons/Fishing/Tiny_Axolotl_Icon.png", "Tiny Axolotl", "299", "-", "Asyz Lla", "Helix", "22", "yellow"],
+        "basic": ["fishingtheme", 9, "res://UI/Icons/Fishing/Tiny_Axolotl_Icon.png", "Tiny Axolotl", "299", "-", "Asyz Lla", "Helix", "22", "yellow", 60],
         "adv": ["299-320", "321-325", "326+", "22", "24", "26", "268,200", "295,020", "321,840"],
         "fish": [3, "Bladed Steel Jig, Brute Leech, Purse Web Spider", "The Pappus Tree (X:6 Y:35)", "Any", "pm"],
         "mooch": ["Aether Eye", "res://UI/Icons/Fishing/Mooch/Aether_Eye_Icon.png", "Purse Web Spider, Brute Leech"]
     },
+    "Toadhead": {
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Toadhead_Icon.png", "Toadhead", "56", "-", "Il Mheg", "Wolekdorf", "48", "white", 80],
+        "adv": ["56-60", "61", "62+", "48", "52", "57", "2,165,000", "2,381,500", "2,598,000"],
+        "fish": [0, "Baitbugs", "Father Collard's Failings (X:31.9 Y:22.3)", "Any"],
+        "mooch": ["-", "-", "-"]
+    },
     "Torreya Log": {
-        "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Torreya_Log_Icon.png", "Torreya Log", "470", "6", "The Lochs", "Porta Praetoria", "23", "yellow"],
+        "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Torreya_Log_Icon.png", "Torreya Log", "470", "6", "The Lochs", "Porta Praetoria", "23", "yellow", 70],
         "adv": ["470-499", "500-529", "530+", "23", "26", "29", "995,920", "1,145,308", "1,294,696"]
     },
+    "Tungsten Ore": {
+          "basic": ["miningtheme", 10, "res://UI/Icons/Mining/Tungsten_Ore_Icon.png", "Tungsten Ore", "470", "3", "The Tempest", "The Ondo Cups", "30", "white", 80],
+          "adv": ["470-499", "500-529", "530+", "30", "34", "39", "1,732,000", "1,991,799", "2,251,600"]
+    },
+    "Underground Spring Water": {
+          "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Underground_Spring_Water_Icon.png", "Underground Spring Water", "450", "1", "Lakeland", "Fort Jobb", "15", "yellow", 78],
+          "adv": ["450-469", "470-499", "500+", "15", "16", "18", "655,000", "753,250", "851,500"]
+    },
+    "Upland Wheat": {
+        "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Upland_Wheat_Icon.png", "Upland Wheat", "450", "3", "Kholusia", "Wright", "13", "yellow", 73],
+        "adv": ["450-469", "470-499", "500+", "13", "14", "15", "349,972", "402,467", "454,963"]
+    },
     "Vampiric Tapestry": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Vampiric_Tapestry_Icon.png", "Vampiric Tapestry", "1225", "-", "The Sea of Clouds", "Ok'Zundu", "12", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Vampiric_Tapestry_Icon.png", "Vampiric Tapestry", "1225", "-", "The Sea of Clouds", "Ok'Zundu", "12", "yellow", 60],
         "adv": ["1225-1308", "1309-1331", "1332+", "12", "13", "14", "268,200", "295,020", "321,840"],
         "fish": [0, "Giant Crane Fly", "Mok Oogl Island (X:15 Y:7)", "Any"],
         "mooch": ["Sky Faerie", "res://UI/Icons/Fishing/Mooch/Sky_Faerie_Icon.png", "Red Balloon, Giant Crane Fly"]
     },
     "Vanilla Beans": {
-        "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Vanilla_Beans_Icon.png", "Vanilla Beans", "450", "3", "Coerthas Western Highlands", "Falcon's Nest", "23", "yellow"],
+        "basic": ["botanytheme", 6, "res://UI/Icons/Botany/Vanilla_Beans_Icon.png", "Vanilla Beans", "450", "3", "Coerthas Western Highlands", "Falcon's Nest", "23", "yellow", 60],
         "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Velodyna Grass Carp": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Velodyna_Grass_Carp_Icon.png", "Velodyna Grass Carp", "690", "-", "The Fringes", "Castrum Oriens", "12", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Velodyna_Grass_Carp_Icon.png", "Velodyna Grass Carp", "690", "-", "The Fringes", "Castrum Oriens", "12", "yellow", 61],
         "adv": ["690-737", "738-751", "752+", "12", "13", "14", "243,650", "268,015", "292,380"],
         "fish": [0, "Nightcrawler, Salmon Roe, Suspending Minnow", "The Velodyna River (X:17.7 Y:8.9)", "Any"],
         "mooch": ["-", "-", "-"]
     },
+    "Viis Ear": {
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Viis_Ear_Icon.png", "Platinum Guppy", "62", "-", "The Rak'tika Greatwood", "Slitherbough", "18", "white", 80],
+        "adv": ["62-71", "72-73", "74+", "18", "36", "68", "866,000", "1,082,500", "1,299,000"],
+        "fish": [0, "Small Gig Head", "North Lake Tusi Mek'ta (X:5.2 Y:30)", "Truth of Oceans, Treescale"],
+        "mooch": ["-", "-", "-"]
+    },
     "Violet Quartz": {
-          "basic": ["miningtheme", 12, "res://UI/Icons/Mining/Violet_Quartz_Icon.png", "Violet Quartz", "450", "6", "Coerthas Western Highlands", "Falcon's Nest", "23", "yellow"],
+          "basic": ["miningtheme", 12, "res://UI/Icons/Mining/Violet_Quartz_Icon.png", "Violet Quartz", "450", "6", "Coerthas Western Highlands", "Falcon's Nest", "23", "yellow", 60],
           "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
     "Warmwater Bichir": {
-        "basic": ["fishingtheme", 9, "res://UI/Icons/Fishing/Warmwater_Bichir_Icon.png", "Warmwater Bichir", "683", "-", "The Dravanian Forelands", "Tailfeather", "12", "yellow"],
+        "basic": ["fishingtheme", 9, "res://UI/Icons/Fishing/Warmwater_Bichir_Icon.png", "Warmwater Bichir", "683", "-", "The Dravanian Forelands", "Tailfeather", "12", "yellow", 56],
         "adv": ["683-730", "731-742", "743+", "12", "13", "14", "129,600", "142,560", "155,520"],
         "fish": [6, "Purse Web Spider, Brute Leech, (Also mooched from Marble Oscar)", "The Smoldering Wastes (X:25 Y:25)", "Any", "pm"],
         "mooch": ["Blueclaw Shrimp", "res://UI/Icons/Fishing/Mooch/Blueclaw_Shrimp_Icon.png", "Stonefly Nymph, Purse Web Spider, Brute Leech"]
     },
     "Wattle Bark": {
-        "basic": ["botanytheme", 2, "res://UI/Icons/Botany/Wattle_Bark_Icon.png", "Wattle Bark", "450", "5", "Azys Lla", "Helix", "23", "yellow"],
+        "basic": ["botanytheme", 2, "res://UI/Icons/Botany/Wattle_Bark_Icon.png", "Wattle Bark", "450", "5", "Azys Lla", "Helix", "23", "yellow", 60],
         "adv": ["450-469", "470-499", "500+", "23", "25", "27", "357,600", "411,239", "464,880"]
     },
+    "Weedy Seadragon": {
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Weedy_Seadragon_Icon.png", "Weedy Seadragon", "135", "-", "Kholusia", "Stilltide", "35", "yellow", 72],
+        "adv": ["135-145", "146-148", "149+", "35", "38", "42", "388,900", "427,790", "466,680"],
+        "fish": [0, "Moyebi Shrimp, Short Bill Minnow, Squid Strip", "The Eastern Kholusian Coast (X:35.2 Y:35.8)", "Any"],
+        "mooch": ["Spearhead Squid", "res://UI/Icons/Fishing/Mooch/Spearhead_Squid_Icon.png", "Short Bill Minnow, Moyebi Shrimp"]
+    },
     "Weston Bowfin": {
-        "basic": ["fishingtheme", 8, "res://UI/Icons/Fishing/Weston_Bowfin_Icon.png", "Weston Bowfin", "376", "-", "The Churning Mists", "Zenith", "12", "yellow"],
+        "basic": ["fishingtheme", 8, "res://UI/Icons/Fishing/Weston_Bowfin_Icon.png", "Weston Bowfin", "376", "-", "The Churning Mists", "Zenith", "12", "yellow", 58],
         "adv": ["376-402", "403-409", "410+", "12", "13", "14", "171,360", "188,496", "205,632"],
         "fish": [4, "Brute Leech, Goblin Jig", "Weston Waters (X:9 Y:8)", "Any", "am"],
         "mooch": ["-", "-", "-"]
     },
     "Whilom Catfish": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Whilom_Catfish_Icon.png", "Whilom Catfish", "459", "-", "The Dravanian Forelands", "Tailfeather", "9", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Whilom_Catfish_Icon.png", "Whilom Catfish", "459", "-", "The Dravanian Forelands", "Tailfeather", "9", "yellow", 52],
         "adv": ["459-490", "491-498", "499+", "9", "9", "10", "63,360", "69,696", "76,032"],
         "fish": [0, "Stonefly Nymph, Purse Web Spider, Goblin Jig, Bladed Steel Jig, Brute Leech", "The Smoldering Wastes (X:25 Y:25)", "Dust Storm or Fog or Clouds"],
         "mooch": ["Blueclaw Shrimp", "res://UI/Icons/Fishing/Mooch/Blueclaw_Shrimp_Icon.png", "Stonefly Nymph, Purse Web Spider, Brute Leech"]
     },
     "White Oak Branch": {
-        "basic": ["botanytheme", 10, "res://UI/Icons/Botany/White_Oak_Branch_Icon.png", "White Oak Branch", "450", "3", "Kholusia", "Venmont Yards", "25", "yellow"],
+        "basic": ["botanytheme", 10, "res://UI/Icons/Botany/White_Oak_Branch_Icon.png", "White Oak Branch", "450", "3", "Kholusia", "Venmont Yards", "25", "yellow", 70],
         "adv": ["450-469", "470-499", "500+", "25", "27", "32", "535,307", "615,603", "695,899"]
     },
+    "Wind Widow": {
+        "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Wind_Widow_Icon.png", "Wind Widow", "450", "1", "The Sea of Clouds", "Camp Cloudtop", "8", "yellow", 56],
+        "adv": ["450-469", "470-499", "500+", "8", "8", "9", "77,760", "89,424", "101,088"]
+    },
+    "Winged Hatchetfish": {
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Winged_Hatchetfish_Icon.png", "Winged Hatchetfish", "11", "-", "Kholusia", "Tomra", "38", "yellow", 78],
+        "adv": ["11-12", "13", "14+", "38", "41", "45", "818,750", "900,625", "982,500"],
+        "fish": [0, "Robber Ball", "Upper Watts River (X:27 Y:14.4)", "Any", "am"],
+        "mooch": ["-", "-", "-"]
+    },
     "Wraithfish": {
-        "basic": ["fishingtheme", 12, "res://UI/Icons/Fishing/Wraithfish_Icon.png", "Wraithfish", "216", "-", "The Fringes", "Castrum Oriens", "33", "yellow"],
+        "basic": ["fishingtheme", 12, "res://UI/Icons/Fishing/Wraithfish_Icon.png", "Wraithfish", "216", "-", "The Fringes", "Castrum Oriens", "33", "yellow", 70],
         "adv": ["216-231", "232-236", "237+", "33", "36", "39", "746,940", "821,634", "896,328"],
         "fish": [4, "Stonefly Larva", "Dimworld (X:9.6 Y:29)", "Gyr Abania Folklore", "am"],
         "mooch": ["-", "-", "-"]
     },
     "Yanxian Koi": {
-        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Yanxian_Koi_Icon.png", "Yanxian Koi", "451", "-", "Yanxia", "Namai", "12", "yellow"],
+        "basic": ["fishingtheme", 0, "res://UI/Icons/Fishing/Yanxian_Koi_Icon.png", "Yanxian Koi", "451", "-", "Yanxia", "Namai", "12", "yellow", 64],
         "adv": ["451-482", "483-491", "492+", "12", "13", "14", "318,200", "350,020", "381,840"],
         "fish": [0, "Nightcrawler, Suspending Minnow", "The One River (X:20 Y:24)", "Any"],
         "mooch": ["-", "-", "-"]
     },
+    "Yellow Alumen": {
+          "basic": ["miningtheme", 0, "res://UI/Icons/Mining/Yellow_Alumen_Icon.png", "Yellow Alumen", "450", "2", "Amh Araeng", "Mord Souq", "12", "yellow", 70],
+          "adv": ["450-469", "470-499", "500+", "1w", "13", "14", "248,980", "286,327", "323,674"]
+    },
     "Yellow Copper Ore": {
-          "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Yellow_Copper_Ore_Icon.png", "Yellow Copper Ore", "240", "2", "Coerthas Western Highlands", "Falcon's Nest", "12", "yellow"],
+          "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Yellow_Copper_Ore_Icon.png", "Yellow Copper Ore", "240", "2", "Coerthas Western Highlands", "Falcon's Nest", "12", "yellow", 50],
           "adv": ["240-339", "340-369", "370+", "12", "13", "14", "61,120", "79,488", "89,856"]
     },
     "Yellow Quartz": {
-          "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Yellow_Quartz_Icon.png", "Yellow Quartz", "240", "2", "The Churning Mists", "Moghome", "12", "yellow"],
+          "basic": ["miningtheme", 6, "res://UI/Icons/Mining/Yellow_Quartz_Icon.png", "Yellow Quartz", "240", "2", "The Churning Mists", "Moghome", "12", "yellow", 52],
           "adv": ["240-339", "340-369", "370+", "12", "13", "14", "101,376", "116,582", "131,788"]
+    },
+    "Zelkova Log": {
+          "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Zelkova_Log_Icon.png", "Zelkova Log", "470", "6", "The Lochs", "Porta Praetoria", "10", "yellow", 70],
+          "adv": ["470-499", "500-529", "530+", "10", "11", "13", "248,980", "286,327", "323,674"]
     },
 }

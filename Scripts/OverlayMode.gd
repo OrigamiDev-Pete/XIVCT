@@ -7,9 +7,13 @@ var number_of_panels : int = 4 setget set_number_of_panels
 var drag_position = null
 var panel_opacity : float = 50
 var last_position = null
+var adding_panels = false
+
 
 func _ready():
-	pass
+	for i in get_node("/root/Main/Container/ScrollContainer/Panels").get_child_count():
+			var newpanel = overlaypanel.instance()
+			$VBoxContainer.add_child(newpanel, true)
 
 func _on_Main_ready(): #Whole tree initilized
 	pass
@@ -17,7 +21,7 @@ func _on_Main_ready(): #Whole tree initilized
 
 func _process(_delta):
 	if drag_position:
-		OS.set_window_position(OS.window_position + get_global_mouse_position() - drag_position)	
+		OS.set_window_position(OS.window_position + get_global_mouse_position() - drag_position)
 
 
 func _on_ColorRect_gui_input(event):
@@ -44,18 +48,36 @@ func set_number_of_panels(value):
 
 
 func add_panels():
+#	var hidden_panels = 0
+#	for i in $VBoxContainer.get_child_count():
+#		$VBoxContainer.get_child(i).queue_free()
+#	yield(get_tree().create_timer(0.05), "timeout") # delays script so that dependencies can ready
+#
+#	if get_node("/root/Main/Container/ScrollContainer/Panels").get_child_count() < number_of_panels:
+#		for i in get_node("/root/Main/Container/ScrollContainer/Panels").get_child_count():
+#			var newpanel = overlaypanel.instance()
+#			$VBoxContainer.add_child(newpanel, true)
+#	else:
+#		for i in number_of_panels:
+#			if get_node("/root/Main/Container/ScrollContainer/Panels").get_child(i).visible == false:
+#				var newpanel = overlaypanel.instance()
+#				$VBoxContainer.add_child(newpanel, true)
+#				hidden_panels += 1
+#			var newpanel = overlaypanel.instance()
+#			$VBoxContainer.add_child(newpanel, true)
+
 	for i in $VBoxContainer.get_child_count():
 		$VBoxContainer.get_child(i).queue_free()
 	yield(get_tree().create_timer(0.05), "timeout") # delays script so that dependencies can ready
 	
-	if get_node("/root/Main/Container/ScrollContainer/Panels").get_child_count() < number_of_panels:
-		for i in get_node("/root/Main/Container/ScrollContainer/Panels").get_child_count():
-			var newpanel = overlaypanel.instance()
-			$VBoxContainer.add_child(newpanel, true)
-	else:
-		for i in number_of_panels:
-			var newpanel = overlaypanel.instance()
-			$VBoxContainer.add_child(newpanel, true)
+	for i in get_node("/root/Main/Container/ScrollContainer/Panels").get_child_count():
+		if not get_node("/root/Main/Container/ScrollContainer/Panels").get_child(i).visible:
+			continue
+		var newpanel = overlaypanel.instance()
+		newpanel.item = get_node("/root/Main/Container/ScrollContainer/Panels").get_child(i).item
+		$VBoxContainer.add_child(newpanel, true)
+
+
 
 
 
@@ -89,3 +111,28 @@ func load():
 	panel_opacity = SaveLoad.overlay[2]
 	$CloseButton.position = SaveLoad.overlay[3]
 	$Minimize.position = SaveLoad.overlay[3]
+
+func _on_Panels_complete():
+	if not adding_panels:
+		adding_panels = true
+		yield(get_tree().create_timer(2.5), "timeout") # delays script so that dependencies can ready
+		add_panels()
+		print("adding")
+		$Timer.start()
+
+func _on_Panels_gatherable():
+	if not adding_panels:
+		adding_panels = true
+		yield(get_tree().create_timer(2.5), "timeout") # delays script so that dependencies can ready
+		add_panels()
+		print("gatherable")
+		$Timer.start()
+
+func _input(event):
+	if Input.is_action_just_pressed("ui_accept"):
+		add_panels()
+
+func _on_Timer_timeout():
+	adding_panels = false
+	print("reset")
+

@@ -17,13 +17,13 @@ _global_script_class_icons={
 
 config/name="XIVCT"
 run/main_scene="res://Scenes/Main.tscn"
-boot_splash/image="res://Splash.png"
+boot_splash/image="res://Splash2.png"
 config/icon="res://Icon.png"
 config/auto_accept_quit=false
 config/quit_on_go_back=false
-config/version="1.0"
-config/item_version="1.0"
-config/FF_version="5.08"
+config/version="1.1"
+config/item_version="1.1"
+config/FF_version="5.1"
 
 [autoload]
 

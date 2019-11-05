@@ -26,16 +26,24 @@ func _ready():
 
 func _process(_delta):
 #	get_info(item)
-	if Time.text == "0:02":
-		get_info(item)
+#	if Time.text == "0:02":
+#		get_info(item)
 	get_time()
 	update_progress_bar()
 
 func get_info(item):
-	index = get_position_in_parent()
-	if target_node_parent.get_child(index) != null:
-		target_node = target_node_parent.get_child(index)
-		item = target_node.item
+#	index = get_position_in_parent()
+#	if target_node_parent.get_child(index) != null:
+	if target_node_parent.get_node(item) != null:
+		target_node = target_node_parent.get_node(item)
+#		target_node = target_node_parent.get_child(index)
+		if index + 1 > get_node("/root/Main/OverlayMode").number_of_panels:
+			hide()
+			return
+#		while target_node.visible == false:
+#			index += 1
+#			target_node = target_node_parent.get_child(index)
+#		item = target_node.item
 		group(item)
 		set_colour()
 		get_time()
@@ -46,6 +54,8 @@ func get_info(item):
 		Scrips.text = itemdic[item]["basic"][8]
 		scrip_colour()
 		active()
+#		if target_node.visible == false:
+#			hide()
 
 
 func group(item):

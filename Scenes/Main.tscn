@@ -104,7 +104,6 @@ margin_bottom = 204.0
 [node name="Container" type="Control" parent="." groups=[
 "Main",
 ]]
-editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_clip_content = true
@@ -192,6 +191,7 @@ margin_bottom = 177.0
 
 [node name="CheckBoxes" type="Control" parent="Container"]
 editor/display_folded = true
+visible = false
 anchor_left = 0.001
 anchor_right = 1.0
 margin_left = 897.08
@@ -427,16 +427,19 @@ __meta__ = {
 
 [node name="Tween" type="Tween" parent="Blur"]
 
-[node name="ItemSelect" parent="." instance=ExtResource( 22 )]
+[node name="ItemSelect" parent="." groups=[
+"load",
+"save",
+] instance=ExtResource( 22 )]
 editor/display_folded = true
 visible = false
-anchor_left = 0.219
+anchor_left = 0.185
 anchor_top = 0.315
-anchor_right = 0.219
+anchor_right = 0.185
 anchor_bottom = 0.315
-margin_left = -65.48
-margin_top = -0.200043
-margin_right = 1144.52
+margin_left = -0.200043
+margin_top = -0.200073
+margin_right = 1209.8
 margin_bottom = 399.8
 
 [node name="Settings" parent="." groups=[
@@ -449,7 +452,6 @@ margin_top = -217.5
 margin_bottom = 217.5
 
 [node name="General" parent="Settings/Tabs" index="0"]
-visible = true
 margin_top = 33.0
 
 [node name="MenuButton" parent="Settings/Tabs/General" index="4"]
@@ -457,9 +459,6 @@ items = [ "Drum", null, 0, false, false, -1, 0, null, "", false, "Piano 1", null
 
 [node name="OptionButton" parent="Settings/Tabs/General/SoundMinimized" index="1"]
 items = [ "Dim", null, false, 0, null, "Mute", null, false, 1, null, "Always on", null, false, 2, null ]
-
-[node name="Overlay" parent="Settings/Tabs" index="1"]
-visible = false
 
 [node name="OptionButton" parent="Settings/Tabs/Overlay/CloseButton" index="1"]
 items = [ "Adaptive", null, false, 0, null, "Left", null, false, 1, null, "Right", null, false, 2, null ]
@@ -477,11 +476,150 @@ script = ExtResource( 25 )
 [node name="HTTPRequest" type="HTTPRequest" parent="."]
 use_threads = true
 
+[node name="CheckBoxes2" type="Control" parent="." groups=[
+"Main",
+]]
+anchor_left = 0.001
+anchor_right = 1.0
+margin_left = 897.08
+margin_top = 48.0
+margin_bottom = 129.0
+size_flags_horizontal = 0
+size_flags_vertical = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Checkboxes" type="VBoxContainer" parent="CheckBoxes2"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -375.0
+margin_top = -40.5
+margin_bottom = 40.5
+rect_min_size = Vector2( 375, 81 )
+size_flags_horizontal = 0
+size_flags_vertical = 4
+script = ExtResource( 7 )
+
+[node name="GatherType" type="HBoxContainer" parent="CheckBoxes2/Checkboxes"]
+margin_right = 300.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 300, 40 )
+size_flags_horizontal = 0
+size_flags_vertical = 4
+alignment = 2
+
+[node name="Mining" type="CheckBox" parent="CheckBoxes2/Checkboxes/GatherType"]
+margin_left = 51.0
+margin_right = 130.0
+margin_bottom = 40.0
+focus_mode = 1
+custom_styles/focus = SubResource( 2 )
+enabled_focus_mode = 1
+text = "Mining"
+
+[node name="Icon" type="TextureRect" parent="CheckBoxes2/Checkboxes/GatherType/Mining"]
+margin_left = 34.0
+margin_top = -13.0
+margin_right = 54.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 20, 20 )
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="Botany" type="CheckBox" parent="CheckBoxes2/Checkboxes/GatherType"]
+margin_left = 134.0
+margin_right = 215.0
+margin_bottom = 40.0
+focus_mode = 1
+custom_styles/focus = SubResource( 3 )
+enabled_focus_mode = 1
+text = "Botany"
+
+[node name="Icon" type="TextureRect" parent="CheckBoxes2/Checkboxes/GatherType/Botany"]
+margin_left = 34.0
+margin_top = -13.0
+margin_right = 54.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 20, 20 )
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 6
+
+[node name="Fishing" type="CheckBox" parent="CheckBoxes2/Checkboxes/GatherType"]
+margin_left = 219.0
+margin_right = 300.0
+margin_bottom = 40.0
+focus_mode = 1
+custom_styles/focus = SubResource( 4 )
+enabled_focus_mode = 1
+text = "Fishing"
+
+[node name="Icon" type="TextureRect" parent="CheckBoxes2/Checkboxes/GatherType/Fishing"]
+margin_left = 37.0
+margin_top = -13.0
+margin_right = 57.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 20, 20 )
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="ScripType" type="HBoxContainer" parent="CheckBoxes2/Checkboxes"]
+margin_top = 44.0
+margin_right = 375.0
+margin_bottom = 75.0
+custom_constants/separation = 34
+
+[node name="VSeparator" type="VSeparator" parent="CheckBoxes2/Checkboxes/ScripType"]
+margin_right = 44.66
+margin_bottom = 31.0
+rect_min_size = Vector2( 44.66, 0 )
+custom_styles/separator = SubResource( 5 )
+
+[node name="Yellow" type="CheckBox" parent="CheckBoxes2/Checkboxes/ScripType"]
+margin_left = 78.0
+margin_right = 154.0
+margin_bottom = 31.0
+focus_mode = 1
+enabled_focus_mode = 1
+text = "Yellow"
+
+[node name="Icon" type="TextureRect" parent="CheckBoxes2/Checkboxes/ScripType/Yellow"]
+margin_left = 81.0
+margin_top = 4.0
+margin_right = 101.0
+margin_bottom = 24.0
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 5
+
+[node name="White" type="CheckBox" parent="CheckBoxes2/Checkboxes/ScripType"]
+margin_left = 188.0
+margin_right = 260.0
+margin_bottom = 31.0
+focus_mode = 1
+enabled_focus_mode = 1
+text = "White"
+
+[node name="Icon" type="TextureRect" parent="CheckBoxes2/Checkboxes/ScripType/White"]
+margin_left = 77.0
+margin_top = 4.0
+margin_right = 97.0
+margin_bottom = 24.0
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 5
+
 [node name="OverlayMode" parent="." groups=[
 "load",
 "save",
 "Overlay",
 ] instance=ExtResource( 26 )]
+editor/display_folded = true
 visible = false
 anchor_bottom = 0.5
 margin_left = -300.0
@@ -532,13 +670,15 @@ margin_bottom = 23.0
 [connection signal="pressed" from="Container/CheckBoxes/Checkboxes/GatherType/Fishing" to="Container/CheckBoxes/Checkboxes" method="_on_Fishing_pressed"]
 [connection signal="pressed" from="Container/CheckBoxes/Checkboxes/ScripType/Yellow" to="Container/CheckBoxes/Checkboxes" method="_on_Yellow_pressed"]
 [connection signal="pressed" from="Container/CheckBoxes/Checkboxes/ScripType/White" to="Container/CheckBoxes/Checkboxes" method="_on_White_pressed"]
+[connection signal="complete" from="Container/ScrollContainer/Panels" to="OverlayMode" method="_on_Panels_complete"]
 [connection signal="gatherable" from="Container/ScrollContainer/Panels" to="AudioStreamPlayer" method="_on_Panels_gatherable"]
+[connection signal="gatherable" from="Container/ScrollContainer/Panels" to="OverlayMode" method="_on_Panels_gatherable"]
 [connection signal="pressed" from="SettingsButton" to="Settings" method="_on_SettingsButton_pressed"]
 [connection signal="pressed" from="SettingsButton" to="Blur" method="_on_Settings_pressed"]
 [connection signal="pressed" from="OverlayButton" to="." method="_on_Overlay_pressed"]
 [connection signal="focus_entered" from="Blur" to="Settings" method="_on_Blur_focus_entered"]
-[connection signal="focus_entered" from="Blur" to="Blur" method="_on_Blur_focus_entered"]
 [connection signal="focus_entered" from="Blur" to="ItemSelect" method="_on_Blur_focus_entered"]
+[connection signal="focus_entered" from="Blur" to="Blur" method="_on_Blur_focus_entered"]
 [connection signal="item_changed" from="ItemSelect" to="Container/ScrollContainer/Panels" method="_on_ItemSelect_item_changed"]
 [connection signal="item_changed" from="ItemSelect" to="Container/VBoxContainer/TimeMap" method="_on_ItemSelect_item_changed"]
 [connection signal="request_completed" from="Settings/ItemUpdate" to="." method="_on_ItemUpdate_request_completed"]
@@ -549,6 +689,11 @@ margin_bottom = 23.0
 [connection signal="value_changed" from="Settings/Tabs/Overlay/Visible/SpinBox" to="OverlayMode" method="_on_Visible_value_changed"]
 [connection signal="item_selected" from="Settings/Tabs/Overlay/CloseButton/OptionButton" to="OverlayMode" method="_on_OptionButton_item_selected"]
 [connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]
+[connection signal="pressed" from="CheckBoxes2/Checkboxes/GatherType/Mining" to="CheckBoxes2/Checkboxes" method="_on_Mining_pressed" binds= [ "mining" ]]
+[connection signal="pressed" from="CheckBoxes2/Checkboxes/GatherType/Botany" to="CheckBoxes2/Checkboxes" method="_on_Botany_pressed" binds= [ "botany" ]]
+[connection signal="pressed" from="CheckBoxes2/Checkboxes/GatherType/Fishing" to="CheckBoxes2/Checkboxes" method="_on_Fishing_pressed" binds= [ "fishing" ]]
+[connection signal="pressed" from="CheckBoxes2/Checkboxes/ScripType/Yellow" to="CheckBoxes2/Checkboxes" method="_on_Yellow_pressed" binds= [ "yellow" ]]
+[connection signal="pressed" from="CheckBoxes2/Checkboxes/ScripType/White" to="CheckBoxes2/Checkboxes" method="_on_White_pressed" binds= [ "white" ]]
 [connection signal="pressed" from="OverlayMode/CloseButton" to="." method="_on_CloseButton_pressed"]
 
 [editable path="Settings"]
