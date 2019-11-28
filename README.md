@@ -19,7 +19,6 @@ XIVCT is completely free and open for anyone to modify and customize!
 * Stay up to date with auto version checking
 
 ## Overlay Mode
-![OverlayMode](/Screencaps/OverlayView.png)
 Never leave the action with Overlay Mode, keeping all the useful information right on top of your game.
  * Drag and drop placement
  * Easily select the number of items on screen
