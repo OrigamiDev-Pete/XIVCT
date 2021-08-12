@@ -50,13 +50,12 @@ func _on_Overlay_pressed():
 	overlay_mode()
 
 func overlay_mode():
-
 	get_tree().call_group("Main", "hide")
 	get_tree().call_group("Overlay", "show")
 	
 	OS.set_window_always_on_top(true)
 	OS.window_per_pixel_transparency_enabled = true
-#	OS.window_borderless = true
+	OS.window_borderless = true
 	get_tree().get_root().set_transparent_background(true)
 	if $OverlayMode.last_position != null:
 		OS.window_position = $OverlayMode.last_position

@@ -1,11 +1,11 @@
 extends TextureButton
 
-var position : int = 0 setget set_position # 0 - Adaptive, 1 - Left, 2 - Right
+var position : int = 0 setget set_pos # 0 - Adaptive, 1 - Left, 2 - Right
 
 func _ready():
 	pass
 
-func set_position(value):
+func set_pos(value):
 	position = value
 	match position:
 		0:

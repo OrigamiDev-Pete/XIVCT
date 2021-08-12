@@ -41,6 +41,9 @@ rect_min_size = Vector2( 0, 62 )
 theme = ExtResource( 1 )
 custom_styles/panel = ExtResource( 2 )
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="PanelSeparator" type="HBoxContainer" parent="."]
 margin_right = 1920.0
@@ -48,6 +51,9 @@ margin_bottom = 62.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ColorRect" type="ColorRect" parent="PanelSeparator"]
 margin_right = 10.0
@@ -220,9 +226,8 @@ columns = 2
 script = ExtResource( 11 )
 
 [node name="Extras" type="Control" parent="Extras"]
-editor/display_folded = true
 visible = false
-margin_right = 1916.0
+margin_right = 958.0
 margin_bottom = 125.0
 grow_horizontal = 0
 grow_vertical = 0
@@ -237,7 +242,6 @@ margin_bottom = 95.0
 custom_styles/panel = SubResource( 5 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Extras/Extras"]
-editor/display_folded = true
 margin_left = 160.0
 margin_top = 18.0
 margin_right = 639.0
@@ -279,7 +283,6 @@ text = "test"
 align = 1
 
 [node name="Scrips" type="VBoxContainer" parent="Extras/Extras/HBoxContainer"]
-editor/display_folded = true
 margin_left = 161.0
 margin_right = 318.0
 margin_bottom = 104.0
@@ -311,7 +314,6 @@ margin_bottom = 104.0
 align = 1
 
 [node name="Exp" type="VBoxContainer" parent="Extras/Extras/HBoxContainer"]
-editor/display_folded = true
 margin_left = 322.0
 margin_right = 479.0
 margin_bottom = 104.0
@@ -353,7 +355,6 @@ expand = true
 stretch_mode = 6
 
 [node name="Fish" type="Control" parent="Extras"]
-editor/display_folded = true
 visible = false
 size_flags_horizontal = 2
 size_flags_vertical = 0
@@ -401,7 +402,6 @@ text = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst
 wait_time = 2.0
 
 [node name="Panel3" type="Panel" parent="Extras/Fish/Fish/HBoxContainer"]
-editor/display_folded = true
 margin_top = 27.0
 margin_right = 510.0
 margin_bottom = 50.0
@@ -420,7 +420,6 @@ margin_bottom = 23.0
 text = "---"
 
 [node name="Panel" type="Panel" parent="Extras/Fish/Fish/HBoxContainer"]
-editor/display_folded = true
 margin_top = 54.0
 margin_right = 510.0
 margin_bottom = 77.0
@@ -498,6 +497,7 @@ texture = ExtResource( 13 )
 expand = true
 
 [node name="Tween" type="Tween" parent="Extras"]
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="visibility_changed" from="Extras/Fish/Fish/HBoxContainer/Panel2/TextScrollBox" to="Extras/Fish/Fish/HBoxContainer/Panel2/TextScrollBox" method="_on_TextScrollBox_visibility_changed"]
 [connection signal="timeout" from="Extras/Fish/Fish/HBoxContainer/Panel2/TextScrollBox/Timer" to="Extras/Fish/Fish/HBoxContainer/Panel2/TextScrollBox" method="_on_Timer_timeout"]

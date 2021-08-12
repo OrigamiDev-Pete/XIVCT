@@ -772,5 +772,5 @@
     "Zelkova Log": {
           "basic": ["botanytheme", 0, "res://UI/Icons/Botany/Zelkova_Log_Icon.png", "Zelkova Log", "470", "6", "The Lochs", "Porta Praetoria", "10", "yellow", 70],
           "adv": ["470-499", "500-529", "530+", "10", "11", "13", "248,980", "286,327", "323,674"]
-    },
+    }
 }

@@ -45,7 +45,7 @@ func _on_LineEdit_text_changed(new_text):
 
 func search(text):
 	regex.compile("(?i)" + text) #(?i) makes regex case insensitive
-	var result = regex.search_all(str(item_array))
+	# var result = regex.search_all(str(item_array))
 	for result in regex.search_all(str(item_array)):
 		emit_signal("found", "(?i)" + text)
 

@@ -6,13 +6,13 @@
 [ext_resource path="res://UI/Icons/Botanist_Icon_Yellow.png" type="Texture" id=4]
 [ext_resource path="res://UI/Icons/Fisher_Icon_Yellow.png" type="Texture" id=5]
 
-[sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 0.32549, 0.32549, 0.32549, 1 )
-
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.32549, 0.32549, 0.32549, 1 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.32549, 0.32549, 0.32549, 1 )
+
+[sub_resource type="DynamicFont" id=3]
 size = 12
 font_data = ExtResource( 2 )
 
@@ -23,17 +23,20 @@ margin_right = 0.399902
 margin_bottom = 0.399994
 mouse_filter = 2
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Panel2" type="Panel" parent="."]
 margin_left = 42.0
 margin_top = -50.0
 margin_right = 110.0
-custom_styles/panel = SubResource( 3 )
+custom_styles/panel = SubResource( 1 )
 
 [node name="Panel" type="Panel" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_styles/panel = SubResource( 1 )
+custom_styles/panel = SubResource( 2 )
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
 anchor_right = 1.0
@@ -50,7 +53,7 @@ margin_left = 25.0
 margin_top = 8.0
 margin_right = 214.6
 margin_bottom = 35.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 placeholder_text = "Search..."
 
 [node name="SpinBoxM" type="SpinBox" parent="Panel"]
@@ -80,6 +83,7 @@ value = 80.0
 prefix = "Lv."
 
 [node name="SpinBoxF" type="SpinBox" parent="Panel"]
+visible = false
 anchor_left = 0.14
 anchor_right = 0.14
 margin_left = 427.6
@@ -113,6 +117,7 @@ texture = ExtResource( 4 )
 expand = true
 
 [node name="TextureRect3" type="TextureRect" parent="Panel"]
+visible = false
 anchor_left = 0.14
 anchor_right = 0.14
 margin_left = 407.6
@@ -130,5 +135,6 @@ margin_bottom = -10.0
 text = "Clear"
 
 [node name="Tween" type="Tween" parent="."]
+
 [connection signal="text_changed" from="Panel/LineEdit" to="." method="_on_LineEdit_text_changed"]
 [connection signal="pressed" from="Panel/Clear" to="." method="_on_Clear_pressed"]

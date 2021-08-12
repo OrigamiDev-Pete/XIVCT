@@ -190,7 +190,6 @@ margin_right = 1920.0
 margin_bottom = 177.0
 
 [node name="CheckBoxes" type="Control" parent="Container"]
-editor/display_folded = true
 visible = false
 anchor_left = 0.001
 anchor_right = 1.0
@@ -263,6 +262,7 @@ expand = true
 stretch_mode = 6
 
 [node name="Fishing" type="CheckBox" parent="Container/CheckBoxes/Checkboxes/GatherType"]
+visible = false
 margin_left = 219.0
 margin_right = 300.0
 margin_bottom = 40.0
@@ -344,7 +344,6 @@ script = ExtResource( 12 )
 [node name="Time" type="Control" parent="." groups=[
 "Main",
 ]]
-editor/display_folded = true
 anchor_right = 1.0
 margin_right = 5.0
 margin_bottom = 40.0
@@ -403,7 +402,6 @@ stretch_mode = 5
 [node name="UpdateLabel" type="Label" parent="." groups=[
 "Main",
 ]]
-editor/display_folded = true
 margin_left = 85.0
 margin_top = 5.0
 margin_right = 300.0
@@ -415,7 +413,6 @@ autoplay = "Pulse"
 anims/Pulse = SubResource( 10 )
 
 [node name="Blur" type="ColorRect" parent="."]
-editor/display_folded = true
 material = ExtResource( 20 )
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -431,7 +428,6 @@ __meta__ = {
 "load",
 "save",
 ] instance=ExtResource( 22 )]
-editor/display_folded = true
 visible = false
 anchor_left = 0.185
 anchor_top = 0.315
@@ -446,7 +442,6 @@ margin_bottom = 399.8
 "load",
 "save",
 ] instance=ExtResource( 23 )]
-editor/display_folded = true
 visible = false
 margin_top = -217.5
 margin_bottom = 217.5
@@ -512,8 +507,8 @@ size_flags_vertical = 4
 alignment = 2
 
 [node name="Mining" type="CheckBox" parent="CheckBoxes2/Checkboxes/GatherType"]
-margin_left = 51.0
-margin_right = 130.0
+margin_left = 136.0
+margin_right = 215.0
 margin_bottom = 40.0
 focus_mode = 1
 custom_styles/focus = SubResource( 2 )
@@ -531,8 +526,8 @@ expand = true
 stretch_mode = 6
 
 [node name="Botany" type="CheckBox" parent="CheckBoxes2/Checkboxes/GatherType"]
-margin_left = 134.0
-margin_right = 215.0
+margin_left = 219.0
+margin_right = 300.0
 margin_bottom = 40.0
 focus_mode = 1
 custom_styles/focus = SubResource( 3 )
@@ -550,6 +545,7 @@ expand = true
 stretch_mode = 6
 
 [node name="Fishing" type="CheckBox" parent="CheckBoxes2/Checkboxes/GatherType"]
+visible = false
 margin_left = 219.0
 margin_right = 300.0
 margin_bottom = 40.0
@@ -615,11 +611,10 @@ expand = true
 stretch_mode = 5
 
 [node name="OverlayMode" parent="." groups=[
+"Overlay",
 "load",
 "save",
-"Overlay",
 ] instance=ExtResource( 26 )]
-editor/display_folded = true
 visible = false
 anchor_bottom = 0.5
 margin_left = -300.0
@@ -659,9 +654,10 @@ margin_bottom = 23.0
 margin_left = 373.0
 margin_right = 419.0
 margin_bottom = 23.0
+
 [connection signal="ready" from="." to="OverlayMode" method="_on_Main_ready"]
-[connection signal="pressed" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/Button" to="Blur" method="_on_Button_pressed"]
+[connection signal="pressed" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="focus_entered" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" to="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" method="_on_LineEdit_focus_entered"]
 [connection signal="mouse_exited" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" to="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" method="_on_LineEdit_mouse_exited"]
 [connection signal="text_changed" from="Container/VBoxContainer/Header/HBoxContainer2/VBoxContainer/HBoxContainer/LineEdit" to="Container/ScrollContainer/Panels" method="_on_LineEdit_text_changed"]
@@ -673,12 +669,12 @@ margin_bottom = 23.0
 [connection signal="complete" from="Container/ScrollContainer/Panels" to="OverlayMode" method="_on_Panels_complete"]
 [connection signal="gatherable" from="Container/ScrollContainer/Panels" to="AudioStreamPlayer" method="_on_Panels_gatherable"]
 [connection signal="gatherable" from="Container/ScrollContainer/Panels" to="OverlayMode" method="_on_Panels_gatherable"]
-[connection signal="pressed" from="SettingsButton" to="Settings" method="_on_SettingsButton_pressed"]
 [connection signal="pressed" from="SettingsButton" to="Blur" method="_on_Settings_pressed"]
+[connection signal="pressed" from="SettingsButton" to="Settings" method="_on_SettingsButton_pressed"]
 [connection signal="pressed" from="OverlayButton" to="." method="_on_Overlay_pressed"]
+[connection signal="focus_entered" from="Blur" to="Blur" method="_on_Blur_focus_entered"]
 [connection signal="focus_entered" from="Blur" to="Settings" method="_on_Blur_focus_entered"]
 [connection signal="focus_entered" from="Blur" to="ItemSelect" method="_on_Blur_focus_entered"]
-[connection signal="focus_entered" from="Blur" to="Blur" method="_on_Blur_focus_entered"]
 [connection signal="item_changed" from="ItemSelect" to="Container/ScrollContainer/Panels" method="_on_ItemSelect_item_changed"]
 [connection signal="item_changed" from="ItemSelect" to="Container/VBoxContainer/TimeMap" method="_on_ItemSelect_item_changed"]
 [connection signal="request_completed" from="Settings/ItemUpdate" to="." method="_on_ItemUpdate_request_completed"]
@@ -697,5 +693,4 @@ margin_bottom = 23.0
 [connection signal="pressed" from="OverlayMode/CloseButton" to="." method="_on_CloseButton_pressed"]
 
 [editable path="Settings"]
-
 [editable path="OverlayMode"]

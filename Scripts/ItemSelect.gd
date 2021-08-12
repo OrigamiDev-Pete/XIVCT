@@ -99,7 +99,7 @@ func _on_LineEdit_text_changed(new_text):
 
 func search(text):
 	regex.compile("(?i)" + text)
-	var result = regex.search_all(str(item_array_keys))
+	# var result = regex.search_all(str(item_array_keys))
 	for result in regex.search_all(str(item_array_keys)):
 		emit_signal("found", "(?i)" + text)
 

@@ -41,7 +41,7 @@ func add_line(item):
 	if itemdic[item]["basic"][0] == "fishingtheme" and itemdic[item]["basic"][1] != 0:
 		life = itemdic[item]["fish"][0]
 		if itemdic[item]["fish"][4] == "pm":
-			time1 + 12
+			time1 += 12
 	if itemdic[item]["basic"][0] == "fishingtheme" and itemdic[item]["fish"][4] == "am" and time1 == 12:
 		time1 -= 12
 	

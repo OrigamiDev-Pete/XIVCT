@@ -2,7 +2,7 @@ extends Node
 
 var item_dictionary : Dictionary
 var versions : Dictionary
-var master_dictionary : bool = false
+var master_dictionary : bool = true
 
 func _ready():
 	item_dictionary = read_json()
